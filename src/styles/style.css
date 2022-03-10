@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    font-family: AkzidenzGroteskBQ-Ext, Helvatica, Arial;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(rgb(55, 52, 61) 30%, rgb(46, 42, 52) 70%);
+    background-color: rgb(46, 42, 52);
+    padding-bottom: 5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+#top {
+    background-image: url('../images/lie-to-me-blur.webp');
+    background-position: top 0 right 50%;
+    padding-top: 3rem;
+    padding-bottom: 12rem;
+}
+
+.nav-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    margin: 1rem;
+    color: #2E2A34;
+    font-size: calc(22px + (24 - 17) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
+    text-decoration: none;
+}
+
+.bottom-icon {
+    margin: 1rem;
+    color: #fff;
+    font-size: calc(22px + (24 - 17) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-icons a:hover .icon {
+    color: #fff;
+    transition: all .3s ease-out;
+}
+
+.nav-icons a:hover .bottom-icon {
+    color: #99cff7;
+    transition: all .3s ease-out;
+}
+
+nav h1 {
+    margin: 0;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif !important;
+    font-size: calc(40px + (67 - 17) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
+}
+
+#release-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+#album-cover {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.column {
+    padding: 0 3rem;
+}
+
+#bold {
+    font-weight: bolder;
+}
+
+#release-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.release-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.47rem auto;
+    width: 14rem;
+    height: 3.5rem;
+    background-color: #2E2A34;
+    border-radius: 1rem;
+    transition: all .3s ease-out;
+}
+
+.release-btn:hover {
+    background-color: #fff;
+}
+
+.release-logo {
+    transition: all .3s ease-out;
+}
+
+.release-btn:hover .release-logo {
+    filter: brightness(24%);
+}
+
+.shows {
+    margin: 0 auto;
+    padding: 5rem 3rem;
+    color: white;
+    text-align: center;
+}
+
+.shows p {
+    margin-bottom: 3rem;
+    font-size: small;
+}
+
+#concert-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    margin: 1rem;
+    padding: 1rem;
+    background: none;
+    border: solid 2px white;
+    border-radius: 0 !important;
+    color: white;
+    font: inherit;
+    font-size: small;
+    font-weight: 900;
+    letter-spacing: .1875rem;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s ease-out;
+    -webkit-appearance: none !important;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #2E2A34;
+}
+
+#concert-table p {
+    margin: 1rem;
+    width: 25%;
+    font-family: inherit;
+    font-size: small;
+    text-align: left;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .1875rem;
+    color: white;
+}
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 87%;
+    min-height: 5.4rem;
+    border-bottom: 1px solid #dddddd;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .3s ease-out;
+}
+
+.table-row:first-child {
+    border-top: 1px solid #dddddd;
+}
+
+.table-row:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+#mc_embed_signup {
+    margin: 0 auto;
+    padding: 5rem 3rem;
+    clear: center;
+    width: 80%;
+    color: white;
+    text-align: center;
+}
+
+.required {
+    margin: 1rem !important;
+    padding: 0.5rem 0;
+    width: 20rem !important;
+    height: 2.5rem !important;
+    background: none;
+    border: none;
+    border-radius: 0 !important;
+    border-bottom: 2px solid #fff !important;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1875rem;
+    outline: 0 !important;
+    -webkit-appearance: none !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background 1000000s 0s !important;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
+
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: -internal-light-dark(#2E2A34, #2E2A34) !important;
+    color: -internal-light-dark(white, white) !important;
+}
+
+::placeholder {
+    font-size: small;
+    text-transform: uppercase;
+    letter-spacing: .1875rem;
+    color: #dddddd;
+}
+
+.required:active {
+    width: 33%;
+    height: 2rem;
+    background: none;
+    border: none;
+}
+
+.response {
+    padding: 1rem;
+    font-size: small;
+}
+
+.response a {
+    color: rgba(124, 203, 232, 1);
+}
+
+.mce_inline_error {
+    background: none !important;
+    font-weight: normal !important;
+    font-size: x-small;
+}
+
+#copyright-text {
+    text-align: center;
+    color: #fff;
+    font-size: x-small;
+    margin-top: 3rem;
+}
+
+.github-link {
+    color: #fff;
+    transition: all .2s ease-in;
+    border-bottom: solid 1px rgba(221, 221, 221, 0);
+}
+
+.github-link:hover {
+    color: #ddd;
+    border-bottom: solid 1px #ddd;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    #album-cover {
+        width: 85%;
+    }
+
+    #concert-table p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .table-row {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    #mc_embed_signup {
+        padding: 5rem 1rem !important;
+    }
+
+    .mc-field-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
