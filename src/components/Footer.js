@@ -3,7 +3,7 @@ import '../styles/style.css'
 export default function Footer() {
 
     let thisYear = new Date().toDateString().slice(11);
-    let gitHubLink = "https://www.github.com/dimitermusic'"
+    let gitHubLink = "https://www.github.com/dimitermusic"
 
     return (
         <>
