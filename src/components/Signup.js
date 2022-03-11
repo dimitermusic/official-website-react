@@ -1,6 +1,28 @@
-import '../styles/style.css'
+import '../styles/style.css';
+import React, { useState } from 'react';
 
 export default function Signup() {
+
+    // Create state variables for the fields in the form
+    // We are also setting their initial values to an empty string
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+
+    const handleInputChange = (e) => {
+        // Getting the value and name of the input which triggered the change
+        const { target } = e;
+        const inputType = target.name;
+        const inputValue = target.value;
+
+        // Based on the input type, we set the state of either name, email, and message.
+        if (inputType === "FULLNAME") {
+            setName(inputValue);
+        } else if (inputType === 'EMAIL') {
+            setEmail(inputValue);
+        }
+
+    };
+
     return (
         <div id="mc_embed_signup">
             <form
@@ -10,11 +32,11 @@ export default function Signup() {
                 <div id="mc_embed_signup_scroll">
                     <h1>SUBSCRIBE</h1>
                     <div class="mc-field-group">
-                        <input type="text" value="" placeholder="Full Name" name="FULLNAME" class="required"
+                        <input type="text" value={name} onChange={handleInputChange} placeholder="Full Name" name="FULLNAME" class="required"
                             id="mce-FULLNAME" />
                     </div>
                     <div class="mc-field-group">
-                        <input type="email" value="" placeholder="Email Address" name="EMAIL" class="required email"
+                        <input type="email" value={email} onChange={handleInputChange} placeholder="Email Address" name="EMAIL" class="required email"
                             id="mce-EMAIL" />
                     </div>
                     <div id="mce-responses" class="clear foot">

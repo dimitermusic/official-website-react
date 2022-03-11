@@ -1,6 +1,6 @@
 import Landing from "./components/Landing";
 import Concerts from "./components/Concerts";
-// import Signup from "./components/Signup";
+import Signup from "./components/Signup";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -8,7 +8,7 @@ export default function App() {
     <div className="App">
       <Landing />
       <Concerts />
-      {/* <Signup /> */}
+      <Signup />
       <Footer />
     </div>
   );

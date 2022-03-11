@@ -61,10 +61,14 @@ export default function Concerts() {
                     on guitar and backup vocals).</p>
                 <div id="concert-table">
                     {concerts.map(concert => {
+
                         let today = new Date().valueOf() - 90000000;
                         let currentConcert = new Date(concert.date).valueOf();
+
                         if (currentConcert >= today) {
+
                             return (
+
                                 <a key={concert.id} className="table-row" target="_blank" rel="noreferrer" href={concert.bandsInTownLink || null}
                                 >
                                     <p>{concert.date}</p>
@@ -73,11 +77,14 @@ export default function Concerts() {
                                     {concert.ticketLink && <a className="btn" target="_blank" rel="noreferrer" href={concert.ticketLink}>TICKETS</a>}
 
                                 </a>
+
                             )
+
                         }
 
-                    }
-                    )}
+                        return concert
+
+                    })}
                 </div>
             </div >
         )
