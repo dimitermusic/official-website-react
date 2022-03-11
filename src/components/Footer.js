@@ -1,26 +1,10 @@
 import '../styles/style.css'
 
-// Dynamically set copyright year to automatically update
-const handleCopyrightMessage = () => {
-
-    let copyrightText = document.getElementById('copyright-text');
-    let thisYear = new Date().toDateString().slice(11);
-    let githubLink = document.createElement('a');
-
-    copyrightText.textContent = `© ${thisYear} Dimiter Yordanov. All Rights Reserved. Powered by `;
-
-    // Add link to dynamically created copyright text
-    githubLink.textContent = 'Dimiter Yordanov.';
-    githubLink.href = 'https://www.github.com/dimitermusic';
-    githubLink.target = '_blank';
-    githubLink.classList.add('github-link');
-    copyrightText.appendChild(githubLink);
-
-
-}
-
-
 export default function Footer() {
+
+    let thisYear = new Date().toDateString().slice(11);
+    let gitHubLink = "https://www.github.com/dimitermusic'"
+
     return (
         <>
             <div className="nav-icons">
@@ -39,9 +23,7 @@ export default function Footer() {
                 <a target="_blank" rel="noreferrer" href="https://www.imdb.com/name/nm1812085/">
                     <i className="fab bottom-icon fa-imdb"></i></a>
             </div>
-            <p id="copyright-text"></p>
+            <p id="copyright-text">© {thisYear} Dimiter Yordanov. All Rights Reserved. Powered by <a class="github-link" href={gitHubLink} target="_blank" rel="noreferrer">Dimiter Yordanov</a></p>
         </>
     )
 }
-
-handleCopyrightMessage();
