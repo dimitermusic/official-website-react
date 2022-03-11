@@ -122,16 +122,26 @@ nav h1 {
     filter: brightness(24%);
 }
 
-.shows {
+.concerts {
     margin: 0 auto;
     padding: 5rem 3rem;
     color: white;
     text-align: center;
 }
 
-.shows p {
+.concerts p {
     margin-bottom: 3rem;
     font-size: small;
+}
+
+#coming-soon {
+    margin: 3rem;
+    font-family: inherit;
+    font-size: medium;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: .1875rem;
+    color: white;
 }
 
 #concert-table {
