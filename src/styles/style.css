@@ -7,10 +7,13 @@
 
 body {
     margin: 0;
-    height: 100vh;
-    background-image: linear-gradient(rgb(83, 71, 102), rgb(46, 42, 52));
-    background-repeat: no-repeat;
+    padding: 0;
     background-color: rgb(46, 42, 52);
+}
+
+.App {
+    background-image: linear-gradient(rgb(72, 63, 87), rgb(46, 42, 52));
+    background-repeat: no-repeat;
     padding-bottom: 5rem;
 }
 
@@ -285,7 +288,7 @@ input:-internal-autofill-selected {
     text-align: center;
     color: #fff;
     font-size: x-small;
-    margin: 3rem 0;
+    margin-top: 3rem;
 }
 
 .github-link {
