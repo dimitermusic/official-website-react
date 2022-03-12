@@ -1,4 +1,5 @@
 import '../styles/style.css'
+import { FaSpotify, FaApple, FaYoutube, FaInstagram, FaFacebook, FaTwitter, FaImdb } from "react-icons/fa";
 import lieToMe from '../images/lie-to-me.webp'
 import spotify from '../images/Y-Spotify.png'
 import apple from '../images/Y-AppleMusic.png'
@@ -13,19 +14,19 @@ export default function Landing() {
                 <div className='nav-icons'>
                     <a target='_blank' rel='noreferrer'
                         href='https://open.spotify.com/artist/6QfYumUXMvevU1TR729Jrr?si=hddGb2pdSfqz42rIsveMmg'>
-                        <i className='fab icon fa-spotify'></i></a>
+                        <FaSpotify className='icon' /></a>
                     <a target='_blank' rel='noreferrer' href='https://itunes.apple.com/us/artist/dimiter-yordanov/1212694927'>
-                        <i className='fab icon fa-itunes-note'></i></a>
+                        <FaApple className='icon' /></a>
                     <a target='_blank' rel='noreferrer' href='https://www.youtube.com/channel/UCfu37nGmXSfgaMsUS5yO85g'>
-                        <i className='fab icon fa-youtube'></i></a>
+                        <FaYoutube className='icon' /></a>
                     <a target='_blank' rel='noreferrer' href='http://instagram.com/dimitermusic'>
-                        <i className='fab icon fa-instagram'></i></a>
+                        <FaInstagram className='icon' /></a>
                     <a target='_blank' rel='noreferrer' href='https://www.facebook.com/dimiteryordanovmusic'>
-                        <i className='fab icon fa-facebook'></i></a>
-                    <a target='_blank' rel='noreferrer' href='https://soundcloud.com/dimitermusic'>
-                        <i className='fab icon fa-soundcloud'></i></a>
+                        <FaFacebook className='icon' /></a>
+                    <a target='_blank' rel='noreferrer' href='http://www.twitter.com/dimitermusic'>
+                        <FaTwitter className='icon' /></a>
                     <a target='_blank' rel='noreferrer' href='https://www.imdb.com/name/nm1812085/'>
-                        <i className='fab icon fa-imdb'></i></a>
+                        <FaImdb className='icon' /></a>
                 </div>
                 <h1>Dimiter Yordanov</h1>
             </nav>
