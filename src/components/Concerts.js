@@ -1,5 +1,7 @@
 import '../styles/style.css';
 import React, { useState, useEffect } from 'react';
+const axios = require('axios');
+
 
 export default function Concerts() {
 
@@ -9,15 +11,13 @@ export default function Concerts() {
 
     useEffect(() => {
 
-        // Fetch concerts from custom API.
+        // GET concerts from custom API.
         const API = 'https://api.dimitermusic.com/concerts';
 
-        fetch(API)
-            .then(res => res.json())
-            // Sort array of concerts and set state to only future concerts.
+        axios.get(API)
             .then(data => {
 
-                let sortedConcerts = data.sort((a, b) => {
+                let sortedConcerts = data.data.sort((a, b) => {
 
                     let da = new Date(a.date),
                         db = new Date(b.date);
@@ -28,11 +28,13 @@ export default function Concerts() {
 
                 setConcerts(sortedConcerts)
 
-            },
-                (error) => {
-                    setError(error)
-                }
-            )
+            })
+            .catch((error) => {
+
+                setError(error)
+                console.log(error);
+
+            })
 
     }, [])
 
@@ -43,7 +45,7 @@ export default function Concerts() {
         }
     }, [concerts])
 
-    // If error with API call or n concerts present, display message to DOM.
+    // If error with API call or no concerts present, display message to DOM.
     if (error || !concertsPresent) {
         return (
             <div className="concerts">
@@ -62,10 +64,10 @@ export default function Concerts() {
                 <div id="concert-table">
                     {concerts.map(concert => {
 
-                        let today = new Date().valueOf() - 90000000;
+                        let yesterday = new Date().valueOf() - 90000000;
                         let currentConcert = new Date(concert.date).valueOf();
 
-                        if (currentConcert >= today) {
+                        if (currentConcert >= yesterday) {
 
                             return (
 
