@@ -19,19 +19,19 @@ export default function Concerts() {
 
                 let sortedConcerts = data.data.sort((a, b) => {
 
-                    let da = new Date(a.date),
-                        db = new Date(b.date);
+                    let da = new Date(a.date);
+                    let db = new Date(b.date);
 
                     return da - db;
 
                 })
 
-                setConcerts(sortedConcerts)
+                setConcerts(sortedConcerts);
 
             })
             .catch((error) => {
 
-                setError(error)
+                setError(error);
                 console.log(error);
 
             })
@@ -40,28 +40,34 @@ export default function Concerts() {
 
     // If concert data is present, set state to true.
     useEffect(() => {
+
         if (concerts.length > 0) {
-            setConcertsPresent(true)
+
+            setConcertsPresent(true);
+
         }
+
     }, [concerts])
 
     // If error with API call or no concerts present, display message to DOM.
     if (error || !concertsPresent) {
+
         return (
-            <div className="concerts">
+            <div className='concerts'>
                 <h1>UPCOMING CONCERTS</h1>
-                <p id="coming-soon">COMING SOON!</p>
+                <p id='coming-soon'>COMING SOON!</p>
             </div>
-        )
+        );
+
         // If no error and concerts present, map through array of concerts and dynamically render concert data.
     } else {
         return (
-            <div className="concerts">
+            <div className='concerts'>
                 <h1>UPCOMING CONCERTS</h1>
-                <p id="concert-disclaimer">Please note, concert listings include both Dimiter Yordanov and Ariana Deboo
+                <p id='concert-disclaimer'>Please note, concert listings include both Dimiter Yordanov and Ariana Deboo
                     (Dimiter
                     on guitar and backup vocals).</p>
-                <div id="concert-table">
+                <div id='concert-table'>
                     {concerts.map(concert => {
 
                         let yesterday = new Date().valueOf() - 90000000;
@@ -71,20 +77,20 @@ export default function Concerts() {
 
                             return (
 
-                                <a key={concert.id} className="table-row" target="_blank" rel="noreferrer" href={concert.bandsInTownLink || null}
+                                <a key={concert.id} className='table-row' target='_blank' rel='noreferrer' href={concert.bandsInTownLink || null}
                                 >
                                     <p>{concert.date}</p>
                                     <p>{concert.eventName}</p>
                                     <p>{concert.city}</p>
-                                    {concert.ticketLink && <a className="btn" target="_blank" rel="noreferrer" href={concert.ticketLink}>TICKETS</a>}
+                                    {concert.ticketLink && <a className='btn' target='_blank' rel='noreferrer' href={concert.ticketLink}>TICKETS</a>}
 
                                 </a>
 
-                            )
+                            );
 
                         }
 
-                        return concert
+                        return concert;
 
                     })}
                 </div>
