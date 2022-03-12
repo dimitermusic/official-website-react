@@ -23,7 +23,7 @@ export default function Footer() {
                 <a target="_blank" rel="noreferrer" href="https://www.imdb.com/name/nm1812085/">
                     <i className="fab bottom-icon fa-imdb"></i></a>
             </div>
-            <p id="copyright-text">© {thisYear} Dimiter Yordanov. All Rights Reserved. Powered by <a className="github-link" href={gitHubLink} target="_blank" rel="noreferrer">Dimiter Yordanov</a></p>
+            <p id="copyright-text">© {thisYear} Dimiter Yordanov. All Rights Reserved. Powered by <a className="github-link" href={gitHubLink} target="_blank" rel="noreferrer">Dimiter Yordanov</a>.</p>
         </>
     )
 }
