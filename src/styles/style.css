@@ -8,7 +8,8 @@
 body {
     height: 100%;
     margin: 0;
-    background-image: linear-gradient(rgb(55, 52, 61) 30%, rgb(46, 42, 52) 70%);
+    background-image: linear-gradient(rgb(83, 71, 102), rgb(46, 42, 52));
+    background-repeat: no-repeat;
     background-color: rgb(46, 42, 52);
     padding-bottom: 5rem;
 }
