@@ -36,7 +36,7 @@ a {
     align-items: center;
 }
 
-.icon {
+.dark-icon {
     margin: 1rem;
     color: #2E2A34;
     font-size: calc(22px + (24 - 17) * ((100vw - 300px) / (1600 - 300)));
@@ -44,7 +44,7 @@ a {
     text-decoration: none;
 }
 
-.bottom-icon {
+.light-icon {
     margin: 1rem;
     color: #fff;
     font-size: calc(22px + (24 - 17) * ((100vw - 300px) / (1600 - 300)));
@@ -52,12 +52,12 @@ a {
     text-decoration: none;
 }
 
-.nav-icons a:hover .icon {
+.nav-icons a:hover .dark-icon {
     color: #fff;
     transition: all .3s ease-out;
 }
 
-.nav-icons a:hover .bottom-icon {
+.nav-icons a:hover .light-icon {
     color: #99cff7;
     transition: all .3s ease-out;
 }
@@ -89,13 +89,20 @@ nav h1 {
 
 .column {
     padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#bold {
-    font-weight: bolder;
+#lie-to-me-text {
+    margin-top: 2rem;
+    width: 147px;
+    height: auto;
 }
 
 #release-text {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
