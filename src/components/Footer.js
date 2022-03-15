@@ -8,7 +8,7 @@ export default function Footer() {
     let gitHubLink = 'https://www.github.com/dimitermusic'
 
     return (
-        <>
+        <footer>
             <div className='nav-icons'>
                 <a target='_blank' rel='noreferrer'
                     href='https://open.spotify.com/artist/6QfYumUXMvevU1TR729Jrr?si=hddGb2pdSfqz42rIsveMmg'>
@@ -27,6 +27,6 @@ export default function Footer() {
                     <FaImdb className='light-icon' /></a>
             </div>
             <p id='copyright-text'>© {thisYear} Dimiter Yordanov. All Rights Reserved. Powered by <a className='github-link' href={gitHubLink} target='_blank' rel='noreferrer'>Dimiter Yordanov</a>.</p>
-        </>
+        </footer>
     )
 }

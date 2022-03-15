@@ -34,11 +34,8 @@ export default function Landing() {
             <div>
                 <div id='release-section'>
                     <div className='column'>
-                        <a target='_blank' rel='noreferrer'
-                            href='https://open.spotify.com/album/2tqOIJ7JQGANnCAE25bsyx?si=2S13s8dgTL-IUj2e9A7jJQ'>
-                            <img id='album-cover' src={lieToMe}
-                                alt='dimiter lie to me trees lake fence sky' />
-                        </a>
+                        <img id='album-cover' src={lieToMe}
+                            alt='dimiter lie to me trees lake fence sky' />
                     </div>
                     <div className='column'>
                         <img id='lie-to-me-text' src={lieToMeText} alt='dimiter lie to me text' />

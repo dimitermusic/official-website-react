@@ -8,24 +8,32 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(46, 42, 52);
+    background-color: rgb(23, 23, 23);
 }
 
 .App {
-    background-image: linear-gradient(rgb(72, 63, 87), rgb(46, 42, 52));
+    background-color: rgb(23, 23, 23);
     background-repeat: no-repeat;
-    padding-bottom: 5rem;
 }
 
 a {
     text-decoration: none;
+    transition: none !important;
+    -webkit-transition: none !important;
 }
 
 #landing {
     background-image: url('../images/lie-to-me-blur.webp');
     background-position: top 0 right 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 0 right 50%;
     padding-top: 3rem;
     padding-bottom: 6rem;
+}
+
+footer {
+    padding: 3rem;
 }
 
 .nav-icons {
@@ -46,7 +54,7 @@ a {
 
 .light-icon {
     margin: 1rem;
-    color: #fff;
+    color: #ddd;
     font-size: calc(22px + (24 - 17) * ((100vw - 300px) / (1600 - 300)));
     text-align: center;
     text-decoration: none;
@@ -54,12 +62,10 @@ a {
 
 .nav-icons a:hover .dark-icon {
     color: #fff;
-    transition: all .3s ease-out;
 }
 
 .nav-icons a:hover .light-icon {
-    color: #99cff7;
-    transition: all .3s ease-out;
+    color: rgb(167, 187, 252);
 }
 
 nav h1 {
@@ -119,15 +125,10 @@ nav h1 {
     height: 3.5rem;
     background-color: #2E2A34;
     border-radius: 1rem;
-    transition: all .3s ease-out;
 }
 
 .release-btn:hover {
     background-color: #fff;
-}
-
-.release-logo {
-    transition: all .3s ease-out;
 }
 
 .release-btn:hover .release-logo {
@@ -156,7 +157,7 @@ nav h1 {
 .concerts {
     margin: 0 auto;
     padding: 5rem 3rem;
-    color: white;
+    color: #ddd;
     text-align: center;
 }
 
@@ -172,7 +173,7 @@ nav h1 {
     text-align: center;
     font-weight: 900;
     letter-spacing: .1875rem;
-    color: white;
+    color: #ddd;
 }
 
 #concert-table {
@@ -186,22 +187,21 @@ nav h1 {
     margin: 1rem;
     padding: 1rem;
     background: none;
-    border: solid 2px white;
+    border: solid 2px #ddd;
     border-radius: 0 !important;
-    color: white;
+    color: #ddd;
     font: inherit;
     font-size: small;
     font-weight: 900;
     letter-spacing: .1875rem;
     cursor: pointer;
     outline: none;
-    transition: all .3s ease-out;
     -webkit-appearance: none !important;
 }
 
 .btn:hover {
-    background-color: #fff;
-    color: #2E2A34;
+    border: solid 2px rgb(167, 187, 252);
+    color: rgb(167, 187, 252);
 }
 
 #concert-table p {
@@ -213,7 +213,7 @@ nav h1 {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: .1875rem;
-    color: white;
+    color: #ddd;
 }
 
 .table-row {
@@ -225,7 +225,6 @@ nav h1 {
     min-height: 5.4rem;
     border-bottom: 1px solid #dddddd;
     background-color: rgba(255, 255, 255, 0);
-    transition: all .3s ease-out;
 }
 
 .table-row:first-child {
@@ -233,7 +232,7 @@ nav h1 {
 }
 
 .table-row:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgb(167, 187, 252, 0.01);
     cursor: pointer;
 }
 
@@ -242,7 +241,7 @@ nav h1 {
     padding: 5rem 3rem;
     clear: center;
     width: 80%;
-    color: white;
+    color: #ddd;
     text-align: center;
 }
 
@@ -251,11 +250,11 @@ nav h1 {
     padding: 0.5rem 0;
     width: 20rem !important;
     height: 2.5rem !important;
-    background: none;
+    background-color: rgb(255, 255, 255, 0);
     border: none;
     border-radius: 0 !important;
-    border-bottom: 2px solid #fff !important;
-    color: #fff;
+    border-bottom: 2px solid #ddd !important;
+    color: #ddd;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .1875rem;
@@ -267,18 +266,19 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    transition: background 1000000s 0s !important;
+    transition: background-color 1000000s 0s !important;
+    background-color: rgb(255, 255, 255, 0.01);
 }
 
 input:-webkit-autofill {
-    -webkit-text-fill-color: white !important;
+    -webkit-text-fill-color: #ddd !important;
 }
 
 input:-internal-autofill-selected {
     appearance: menulist-button;
     background-image: none !important;
-    background-color: -internal-light-dark(#2E2A34, #2E2A34) !important;
-    color: -internal-light-dark(white, white) !important;
+    background-color: -internal-light-dark(rgb(23, 23, 23), rgb(23, 23, 23)) !important;
+    color: -internal-light-dark(#ddd, #ddd) !important;
 }
 
 ::placeholder {
@@ -312,20 +312,19 @@ input:-internal-autofill-selected {
 
 #copyright-text {
     text-align: center;
-    color: #fff;
+    color: #ddd;
     font-size: x-small;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .github-link {
-    color: #fff;
-    transition: all .2s ease-in;
-    border-bottom: solid 1px #fff;
+    color: #ddd;
+    border-bottom: solid 1px #ddd;
 }
 
 .github-link:hover {
-    color: #ddd;
-    border-bottom: solid 1px #ddd;
+    color: rgb(167, 187, 252);
+    border-bottom: solid 1px rgb(167, 187, 252);
 }
 
 
