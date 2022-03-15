@@ -20,7 +20,7 @@ Visit [dimitermusic.com](https://www.dimitermusic.com)!
 New Release:  
 ![Desktop](./src/images/ss1.png)  
 
-Video:  
+Embedded, Fluid YouTube Video:  
 ![Desktop](./src/images/ss2.png)  
 
 Upcoming Concerts:  
