@@ -20,11 +20,14 @@ Visit [dimitermusic.com](https://www.dimitermusic.com)!
 New Release:  
 ![Desktop](./src/images/ss1.png)  
 
-Upcoming Concerts:  
+Video:  
 ![Desktop](./src/images/ss2.png)  
 
-Newsletter Signup:  
+Upcoming Concerts:  
 ![Desktop](./src/images/ss3.png)  
+
+Newsletter Signup and Footer:  
+![Desktop](./src/images/ss4.png)  
 
 Custom API from which shows are fetched and conditionally rendered:  
 ![Desktop](./src/images/ss1a.png)  

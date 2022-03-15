@@ -8,11 +8,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(23, 23, 23);
+    background-color: #121212;
 }
 
 .App {
-    background-color: rgb(23, 23, 23);
+    background-color: #121212;
     background-repeat: no-repeat;
 }
 
@@ -44,28 +44,16 @@ footer {
     align-items: center;
 }
 
-.dark-icon {
+.icon {
     margin: 1rem;
-    color: #2E2A34;
+    color: #ffffff;
     font-size: calc(22px + (24 - 17) * ((100vw - 300px) / (1600 - 300)));
     text-align: center;
     text-decoration: none;
 }
 
-.light-icon {
-    margin: 1rem;
-    color: #ddd;
-    font-size: calc(22px + (24 - 17) * ((100vw - 300px) / (1600 - 300)));
-    text-align: center;
-    text-decoration: none;
-}
-
-.nav-icons a:hover .dark-icon {
-    color: #fff;
-}
-
-.nav-icons a:hover .light-icon {
-    color: #a384ff;
+.nav-icons a:hover .icon {
+    color: rgb(233, 176, 115);
 }
 
 nav h1 {
@@ -121,18 +109,14 @@ nav h1 {
     align-items: center;
     justify-content: center;
     margin: 1.47rem auto;
-    width: 14rem;
-    height: 3.5rem;
-    background-color: #2E2A34;
-    border-radius: 1rem;
+    width: 12rem;
+    height: 3.7rem;
+    border: solid 2px #fff;
 }
 
 .release-btn:hover {
-    background-color: #fff;
-}
-
-.release-btn:hover .release-logo {
-    filter: brightness(24%);
+    background-color: rgb(233, 176, 115);
+    border: solid 2px rgb(233, 176, 115);
 }
 
 .videoContainer {
@@ -157,7 +141,7 @@ nav h1 {
 .concerts {
     margin: 0 auto;
     padding: 5rem 3rem;
-    color: #ddd;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -173,7 +157,7 @@ nav h1 {
     text-align: center;
     font-weight: 900;
     letter-spacing: .1875rem;
-    color: #ddd;
+    color: #ffffff;
 }
 
 #concert-table {
@@ -187,9 +171,9 @@ nav h1 {
     margin: 1rem;
     padding: 1rem;
     background: none;
-    border: solid 2px #ddd;
+    border: solid 2px #ffffff;
     border-radius: 0 !important;
-    color: #ddd;
+    color: #ffffff;
     font: inherit;
     font-size: small;
     font-weight: 900;
@@ -200,8 +184,8 @@ nav h1 {
 }
 
 .btn:hover {
-    border: solid 2px #a384ff;
-    color: #a384ff;
+    border: solid 2px rgb(233, 176, 115);
+    color: rgb(233, 176, 115);
 }
 
 #concert-table p {
@@ -213,7 +197,7 @@ nav h1 {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: .1875rem;
-    color: #ddd;
+    color: #ffffff;
 }
 
 .table-row {
@@ -232,7 +216,7 @@ nav h1 {
 }
 
 .table-row:hover {
-    background-color: #a384ff04;
+    background-color: rgb(233, 176, 115, 0.01);
     cursor: pointer;
 }
 
@@ -254,7 +238,7 @@ nav h1 {
     border: none;
     border-radius: 0 !important;
     border-bottom: 2px solid #ddd !important;
-    color: #ddd;
+    color: #ffffff;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .1875rem;
@@ -266,19 +250,19 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    transition: background-color 1000000s 0s !important;
-    background-color: rgb(255, 255, 255, 0.01);
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #ffffff !important;
 }
 
 input:-webkit-autofill {
-    -webkit-text-fill-color: #ddd !important;
+    -webkit-text-fill-color: #ffffff !important;
 }
 
 input:-internal-autofill-selected {
     appearance: menulist-button;
     background-image: none !important;
-    background-color: -internal-light-dark(rgb(23, 23, 23), rgb(23, 23, 23)) !important;
-    color: -internal-light-dark(#ddd, #ddd) !important;
+    background-color: -internal-light-dark(#121212, #121212) !important;
+    color: -internal-light-dark(#ffffff, #ffffff) !important;
 }
 
 ::placeholder {
@@ -323,8 +307,8 @@ input:-internal-autofill-selected {
 }
 
 .github-link:hover {
-    color: #a384ff;
-    border-bottom: solid 1px #a384ff;
+    color: rgb(233, 176, 115);
+    border-bottom: solid 1px rgb(233, 176, 115);
 }
 
 

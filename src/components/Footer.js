@@ -12,19 +12,19 @@ export default function Footer() {
             <div className='nav-icons'>
                 <a target='_blank' rel='noreferrer'
                     href='https://open.spotify.com/artist/6QfYumUXMvevU1TR729Jrr?si=hddGb2pdSfqz42rIsveMmg'>
-                    <FaSpotify className='light-icon' /></a>
+                    <FaSpotify className='icon' /></a>
                 <a target='_blank' rel='noreferrer' href='https://itunes.apple.com/us/artist/dimiter-yordanov/1212694927'>
-                    <FaApple className='light-icon' /></a>
+                    <FaApple className='icon' /></a>
                 <a target='_blank' rel='noreferrer' href='https://www.youtube.com/channel/UCfu37nGmXSfgaMsUS5yO85g'>
-                    <FaYoutube className='light-icon' /></a>
+                    <FaYoutube className='icon' /></a>
                 <a target='_blank' rel='noreferrer' href='http://instagram.com/dimitermusic'>
-                    <FaInstagram className='light-icon' /></a>
+                    <FaInstagram className='icon' /></a>
                 <a target='_blank' rel='noreferrer' href='https://www.facebook.com/dimiteryordanovmusic'>
-                    <FaFacebook className='light-icon' /></a>
+                    <FaFacebook className='icon' /></a>
                 <a target='_blank' rel='noreferrer' href='http://www.twitter.com/dimitermusic'>
-                    <FaTwitter className='light-icon' /></a>
+                    <FaTwitter className='icon' /></a>
                 <a target='_blank' rel='noreferrer' href='https://www.imdb.com/name/nm1812085/'>
-                    <FaImdb className='light-icon' /></a>
+                    <FaImdb className='icon' /></a>
             </div>
             <p id='copyright-text'>© {thisYear} Dimiter Yordanov. All Rights Reserved. Powered by <a className='github-link' href={gitHubLink} target='_blank' rel='noreferrer'>Dimiter Yordanov</a>.</p>
         </footer>
