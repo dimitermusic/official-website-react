@@ -8,18 +8,123 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #121212;
-}
-
-.App {
-    background-color: #121212;
-    background-repeat: no-repeat;
 }
 
 a {
     text-decoration: none;
     transition: none !important;
     -webkit-transition: none !important;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 5vw;
+    background-color: #ffffff;
+    box-shadow: 0 6px 8px -1px rgb(0, 0, 0, .13);
+}
+
+.mobile-nav {
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2vh 5vw;
+    background-color: #ffffff;
+    height: 9vh;
+    box-shadow: 0 6px 8px -1px rgb(0, 0, 0, .13);
+}
+
+.mobile-nav h1 {
+    margin: 0;
+}
+
+.hamburger {
+    position: absolute;
+    top: 2vh;
+    right: 7vw;
+    color: black;
+    font-size: 8vw;
+}
+
+.times {
+    position: absolute;
+    top: 2vh;
+    right: 7vw;
+    color: white;
+    font-size: 8vw;
+}
+
+.modal {
+    z-index: 1000;
+    background-color: #1212126d;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.modal-menu {
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    padding: 1rem;
+}
+
+.modal-menu li {
+    list-style-type: none;
+    margin: 33px;
+    font-family: inherit;
+    font-size: larger;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: .1875rem;
+}
+
+.modal-menu li a {
+    color: #ffffff;
+}
+
+.modal-menu .icon {
+    color: #ffffff;
+}
+
+.anchors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.anchors a {
+    margin: 24px;
+    padding: 8px 0;
+    font-family: inherit;
+    font-size: medium;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: .1875rem;
+    color: black;
+    border-bottom: solid 4px rgba(0, 0, 0, 0);
+}
+
+.anchors a:hover {
+    border-bottom: solid 4px rgb(91, 91, 91);
+    color: rgb(91, 91, 91);
 }
 
 #landing {
@@ -45,24 +150,25 @@ footer {
 }
 
 .icon {
-    margin: 1rem;
-    color: #ffffff;
-    font-size: calc(22px + (24 - 17) * ((100vw - 300px) / (1600 - 300)));
+    margin: 8px;
+    padding: 8px 0;
+    color: black;
+    font-size: 4.5vh;
     text-align: center;
     text-decoration: none;
+    border-bottom: solid 4px rgb(0, 0, 0, 0);
 }
 
 .nav-icons a:hover .icon {
-    color: rgb(233, 176, 115);
+    color: rgb(91, 91, 91);
+    border-bottom: solid 4px rgb(91, 91, 91);
 }
 
 nav h1 {
-    margin: 0;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif !important;
-    font-size: calc(40px + (67 - 17) * ((100vw - 300px) / (1600 - 300)));
+    margin: 8px;
+    padding: 8px 0;
+    color: black;
+    font-size: 4vh;
     text-align: center;
 }
 
@@ -72,7 +178,7 @@ nav h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 7rem;
+    margin-top: 5vh;
 }
 
 #album-cover {
@@ -111,11 +217,12 @@ nav h1 {
     margin: 1.47rem auto;
     width: 12rem;
     height: 3.7rem;
-    border: solid 2px #fff;
+    background-color: #ce3221;
+    box-shadow: 0 6px 8px -1px rgb(0, 0, 0, .13);
 }
 
 .release-btn:hover {
-    background-color: rgb(233, 176, 115);
+    background-color: black;
 }
 
 .videoContainer {
@@ -140,13 +247,15 @@ nav h1 {
 .concerts {
     margin: 0 auto;
     padding: 5rem 3rem;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: black;
     text-align: center;
 }
 
 .concerts p {
     margin-bottom: 5rem;
     font-size: small;
+    font-weight: 700;
 }
 
 #coming-soon {
@@ -156,7 +265,7 @@ nav h1 {
     text-align: center;
     font-weight: 900;
     letter-spacing: .1875rem;
-    color: #ffffff;
+    color: black;
 }
 
 #concert-table {
@@ -169,8 +278,9 @@ nav h1 {
 .btn {
     margin: 1rem;
     padding: 1rem;
-    background: none;
-    border: solid 2px #ffffff;
+    width: 120px;
+    border: none !important;
+    background-color: #ce3221;
     border-radius: 0 !important;
     color: #ffffff;
     font: inherit;
@@ -182,9 +292,25 @@ nav h1 {
     -webkit-appearance: none !important;
 }
 
+.invisibleBtn {
+    margin: 1rem;
+    padding: 1rem;
+    width: 120px;
+    border: none !important;
+    background-color: none !important;
+    border-radius: 0 !important;
+    color: none !important;
+    font: inherit;
+    font-size: small;
+    font-weight: 900;
+    letter-spacing: .1875rem;
+    outline: none;
+    -webkit-appearance: none !important;
+}
+
 .btn:hover {
-    border: solid 2px rgb(233, 176, 115);
-    color: rgb(233, 176, 115);
+    background-color: black !important;
+    color: #ffffff !important;
 }
 
 #concert-table p {
@@ -196,7 +322,7 @@ nav h1 {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: .1875rem;
-    color: #ffffff;
+    color: black;
 }
 
 .table-row {
@@ -215,7 +341,7 @@ nav h1 {
 }
 
 .table-row:hover {
-    background-color: rgb(233, 176, 115, 0.01);
+    background-color: #ce322109;
     cursor: pointer;
 }
 
@@ -224,7 +350,7 @@ nav h1 {
     padding: 5rem 3rem;
     clear: center;
     width: 80%;
-    color: #ddd;
+    color: black;
     text-align: center;
 }
 
@@ -233,11 +359,12 @@ nav h1 {
     padding: 0.5rem 0;
     width: 20rem !important;
     height: 2.5rem !important;
-    background-color: rgb(255, 255, 255, 0);
     border: none;
     border-radius: 0 !important;
-    border-bottom: 2px solid #ddd !important;
-    color: #ffffff;
+    border-bottom: 2px solid rgb(91, 91, 91) !important;
+    color: black !important;
+    background: none !important;
+    box-shadow: none !important;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .1875rem;
@@ -245,30 +372,11 @@ nav h1 {
     -webkit-appearance: none !important;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-input:-webkit-autofill {
-    -webkit-text-fill-color: #ffffff !important;
-}
-
-input:-internal-autofill-selected {
-    appearance: menulist-button;
-    background-image: none !important;
-    background-color: -internal-light-dark(#121212, #121212) !important;
-    color: -internal-light-dark(#ffffff, #ffffff) !important;
-}
-
 ::placeholder {
     font-size: small;
     text-transform: uppercase;
     letter-spacing: .1875rem;
-    color: #dddddd;
+    color: rgb(128, 128, 128);
 }
 
 .required:active {
@@ -284,7 +392,7 @@ input:-internal-autofill-selected {
 }
 
 .response a {
-    color: rgba(124, 203, 232, 1);
+    color: rgb(91, 91, 91);
 }
 
 .mce_inline_error {
@@ -295,23 +403,41 @@ input:-internal-autofill-selected {
 
 #copyright-text {
     text-align: center;
-    color: #ddd;
+    color: rgb(91, 91, 91);
     font-size: x-small;
     margin-top: 1rem;
 }
 
 .github-link {
-    color: #ddd;
-    border-bottom: solid 1px #ddd;
+    color: rgb(91, 91, 91);
+    border-bottom: solid 1px rgb(91, 91, 91);
 }
 
 .github-link:hover {
-    color: rgb(233, 176, 115);
-    border-bottom: solid 1px rgb(233, 176, 115);
+    color: rgb(113, 113, 113);
+    border-bottom: solid 1px rgb(113, 113, 113);
 }
 
 
 @media only screen and (max-width: 768px) {
+
+    #landing {
+        padding-top: 10vh;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    .icon {
+        margin: 1rem;
+        padding: 0;
+        font-size: 5vw;
+    }
 
     #album-cover {
         width: 85%;

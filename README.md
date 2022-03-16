@@ -29,6 +29,12 @@ Upcoming Concerts:
 Newsletter Signup and Footer:  
 ![Desktop](./src/images/ss4.png)  
 
+Mobile:  
+![Desktop](./src/images/ss5.png)  
+
+Mobile Modal:  
+![Desktop](./src/images/ss6.png)  
+
 Custom API from which shows are fetched and conditionally rendered:  
 ![Desktop](./src/images/ss1a.png)  
 

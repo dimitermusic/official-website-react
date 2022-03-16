@@ -62,7 +62,7 @@ export default function Concerts() {
         // If no error and concerts present, map through array of concerts and dynamically render concert data.
     } else {
         return (
-            <div className='concerts'>
+            <div className='concerts' id='tour'>
                 <h1>UPCOMING CONCERTS</h1>
                 <p id='concert-disclaimer'>Please note, concert listings include both Dimiter Yordanov and Ariana Deboo
                     (Dimiter
@@ -82,7 +82,10 @@ export default function Concerts() {
                                     <p>{concert.date}</p>
                                     <p>{concert.eventName}</p>
                                     <p>{concert.city}</p>
-                                    {concert.ticketLink && <a className='btn' target='_blank' rel='noreferrer' href={concert.ticketLink}>TICKETS</a>}
+                                    {concert.ticketLink ?
+                                        <a className='btn' target='_blank' rel='noreferrer' href={concert.ticketLink}>TICKETS</a> :
+                                        <div className='invisibleBtn'></div>
+                                    }
 
                                 </a>
 

@@ -1,5 +1,4 @@
 import '../styles/style.css'
-import { FaSpotify, FaApple, FaYoutube, FaInstagram, FaFacebook, FaTwitter, FaImdb } from "react-icons/fa";
 import lieToMeText from '../images/lie-to-me-text.png'
 import lieToMe from '../images/lie-to-me.webp'
 import spotify from '../images/Y-Spotify.png'
@@ -11,26 +10,6 @@ import pandora from '../images/pandora.png'
 export default function Landing() {
     return (
         <div id='landing'>
-            <nav>
-                <div className='nav-icons'>
-                    <a target='_blank' rel='noreferrer'
-                        href='https://open.spotify.com/artist/6QfYumUXMvevU1TR729Jrr?si=hddGb2pdSfqz42rIsveMmg'>
-                        <FaSpotify className='icon' /></a>
-                    <a target='_blank' rel='noreferrer' href='https://itunes.apple.com/us/artist/dimiter-yordanov/1212694927'>
-                        <FaApple className='icon' /></a>
-                    <a target='_blank' rel='noreferrer' href='https://www.youtube.com/channel/UCfu37nGmXSfgaMsUS5yO85g'>
-                        <FaYoutube className='icon' /></a>
-                    <a target='_blank' rel='noreferrer' href='http://instagram.com/dimitermusic'>
-                        <FaInstagram className='icon' /></a>
-                    <a target='_blank' rel='noreferrer' href='https://www.facebook.com/dimiteryordanovmusic'>
-                        <FaFacebook className='icon' /></a>
-                    <a target='_blank' rel='noreferrer' href='http://www.twitter.com/dimitermusic'>
-                        <FaTwitter className='icon' /></a>
-                    <a target='_blank' rel='noreferrer' href='https://www.imdb.com/name/nm1812085/'>
-                        <FaImdb className='icon' /></a>
-                </div>
-                <h1>Dimiter Yordanov</h1>
-            </nav>
             <div>
                 <div id='release-section'>
                     <div className='column'>
@@ -74,7 +53,7 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
-            <div className='videoContainer'>
+            <div className='videoContainer' id='watch'>
                 <div className='videoWrapper'>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/4RqEv8Y1CgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
