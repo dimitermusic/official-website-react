@@ -1,6 +1,7 @@
 import '../styles/style.css';
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
+import scrollTo from "gatsby-plugin-smoothscroll"
 import Icons from '../components/Icons';
 
 export default function Nav() {
@@ -20,14 +21,14 @@ export default function Nav() {
             <nav>
                 <h1>Dimiter Yordanov</h1>
                 <div className='anchors'>
-                    <a href='#watch'>watch</a>
-                    <a href='#tour'>tour</a>
-                    <a href='#subscribe'>subscribe</a>
+                    <div onClick={() => scrollTo('#watch')}>watch</div>
+                    <div onClick={() => scrollTo('#tour')}>tour</div>
+                    <div onClick={() => scrollTo('#subscribe')}>subscribe</div>
                 </div>
                 <Icons />
             </nav>
             <div className='mobile-nav'>
-                <a href='#top'><h1>Dimiter Yordanov</h1></a>
+                <div onClick={() => scrollTo('#root')}><h1>Dimiter Yordanov</h1></div>
                 <div onClick={handleOpenModal}>
                     <FaBars className='hamburger' />
                 </div>
@@ -38,13 +39,22 @@ export default function Nav() {
                         </div>
                         <ul>
                             <li>
-                                <a onClick={handleCloseModal} href='#watch'>watch</a>
+                                <div onClick={() => {
+                                    scrollTo('#watch');
+                                    handleCloseModal();
+                                }}>watch</div>
                             </li>
                             <li>
-                                <a onClick={handleCloseModal} href='#tour'>tour</a>
+                                <div onClick={() => {
+                                    scrollTo('#tour');
+                                    handleCloseModal();
+                                }}>tour</div>
                             </li>
                             <li>
-                                <a onClick={handleCloseModal} href='#subscribe'>subscribe</a>
+                                <div onClick={() => {
+                                    scrollTo('#subscribe');
+                                    handleCloseModal();
+                                }}>subscribe</div>
                             </li>
                         </ul>
                         <Icons />

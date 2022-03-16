@@ -77,7 +77,7 @@ export default function Concerts() {
 
                             return (
 
-                                <a key={concert.id} className='table-row' target='_blank' rel='noreferrer' href={concert.bandsInTownLink || null}
+                                <div key={concert.id} className='table-row' onClick={() => (concert.bandsInTownLink && window.open(concert.bandsInTownLink))}
                                 >
                                     <p>{concert.date}</p>
                                     <p>{concert.eventName}</p>
@@ -87,7 +87,7 @@ export default function Concerts() {
                                         <div className='invisibleBtn'></div>
                                     }
 
-                                </a>
+                                </div>
 
                             );
 

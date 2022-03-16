@@ -8,6 +8,7 @@ import amazon from '../images/amazon-music-logo.png'
 import pandora from '../images/pandora.png'
 
 export default function Landing() {
+
     return (
         <div id='landing'>
             <div>

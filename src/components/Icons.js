@@ -2,6 +2,7 @@ import '../styles/style.css'
 import { FaSpotify, FaApple, FaYoutube, FaInstagram, FaFacebook, FaTwitter, FaImdb } from 'react-icons/fa';
 
 export default function Icons() {
+
     return (
         <div className='nav-icons'>
             <a target='_blank' rel='noreferrer'

@@ -1,7 +1,6 @@
 import '../styles/style.css'
 import Icons from '../components/Icons';
 
-
 export default function Footer() {
 
     let thisYear = new Date().toDateString().slice(11);
