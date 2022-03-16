@@ -27,7 +27,7 @@ export default function Nav() {
                 <Icons />
             </nav>
             <div className='mobile-nav'>
-                <h1>Dimiter Yordanov</h1>
+                <a href='#'><h1>Dimiter Yordanov</h1></a>
                 <div onClick={handleOpenModal}>
                     <FaBars className='hamburger' />
                 </div>
