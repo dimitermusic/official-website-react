@@ -439,6 +439,10 @@ nav h1 {
         font-size: 5vw;
     }
 
+    .icon:hover {
+        border-bottom: none;
+    }
+
     #album-cover {
         width: 85%;
     }
