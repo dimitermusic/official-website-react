@@ -27,9 +27,9 @@ export default function Nav() {
             <nav>
                 <h1>Dimiter Yordanov</h1>
                 <div className='anchors'>
-                    <div onClick={() => scrollTo('#watch')}>watch</div>
-                    <div onClick={() => scrollTo('#tour')}>tour</div>
-                    <div onClick={() => scrollTo('#subscribe')}>subscribe</div>
+                    <p onClick={() => scrollTo('#watch')}>watch</p>
+                    <p onClick={() => scrollTo('#tour')}>tour</p>
+                    <p onClick={() => scrollTo('#subscribe')}>subscribe</p>
                 </div>
                 <Icons />
             </nav>
