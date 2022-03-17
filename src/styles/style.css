@@ -132,6 +132,11 @@ nav h1 {
     font-size: 30px;
 }
 
+.times:hover {
+    color: rgb(91, 91, 91);
+    cursor: pointer;
+}
+
 .modal {
     z-index: 1000;
     background-color: #1212126d;
@@ -178,6 +183,11 @@ nav h1 {
 
 .modal-menu li div {
     color: #ffffff;
+}
+
+.modal-menu li div:hover {
+    color: rgb(91, 91, 91);
+    cursor: pointer;
 }
 
 .modal-menu .icon {
