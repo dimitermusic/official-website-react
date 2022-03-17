@@ -4,6 +4,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth !important;
+    max-width: 100%;
 }
 
 body {
@@ -23,14 +24,14 @@ nav {
     flex-wrap: wrap-reverse;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 6px 8px -1px rgb(0, 0, 0, .13);
 }
 
 nav h1 {
-    margin: 14px;
-    padding: 8px 0;
+    margin: 0;
+    padding: 8px 14px;
     color: black;
     font-size: 33px;
     text-align: center;
@@ -44,8 +45,8 @@ nav h1 {
 }
 
 .anchors div {
-    margin: 18px;
-    padding: 8px 0;
+    margin: 0;
+    padding: 8px 14px;
     font-family: inherit;
     font-size: 20px;
     text-align: center;
@@ -70,8 +71,8 @@ nav h1 {
 }
 
 .nav-icons a {
-    margin: 14px;
-    padding: 8px 0;
+    margin: 0;
+    padding: 8px 14px;
     border-bottom: solid 4px rgb(0, 0, 0, 0);
 }
 
@@ -400,7 +401,7 @@ footer {
     font-size: small;
     text-transform: uppercase;
     letter-spacing: .1875rem;
-    color: rgb(128, 128, 128);
+    color: rgb(65, 65, 65);
 }
 
 .response {
@@ -444,10 +445,6 @@ footer {
 
     .mobile-nav {
         display: flex;
-    }
-
-    .icon:hover {
-        border-bottom: none;
     }
 
     #album-cover {
