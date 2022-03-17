@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 export default function App() {
 
   useEffect(() => {
-    scrollTo('#landing')
+    scrollTo('nav')
   }, [])
 
   return (
