@@ -44,7 +44,7 @@ export default function Landing() {
                                         alt='amazon music' />
                                 </div>
                             </a>
-                            <a target='_blank' rel='noreferrer'
+                            <a target='_blank' rel='noreferrer' id='watch'
                                 href='https://www.pandora.com/artist/dimiter-yordanov/lie-to-me-single/ALh7qfx2gl7ch3c'>
                                 <div className='release-btn'>
                                     <img className='release-logo' src={pandora} alt='pandora music' />
@@ -54,7 +54,7 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
-            <div className='videoContainer' id='watch'>
+            <div className='videoContainer' >
                 <div className='videoWrapper'>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/4RqEv8Y1CgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
