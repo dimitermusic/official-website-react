@@ -34,7 +34,7 @@ export default function Nav() {
                 <Icons />
             </nav>
             <div className='mobile-nav'>
-                <div onClick={() => scrollTo('#root')}><h1>Dimiter Yordanov</h1></div>
+                <div onClick={() => scrollTo('#landing')}><h1>Dimiter Yordanov</h1></div>
                 <div onClick={handleOpenModal}>
                     <FaBars className='hamburger' />
                 </div>

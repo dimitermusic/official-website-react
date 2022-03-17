@@ -107,7 +107,7 @@ nav h1 {
 }
 
 .mobile-nav h1 {
-    left: 22px;
+    left: 30px;
     top: 50%;
     margin: 0;
     color: black;
@@ -117,9 +117,9 @@ nav h1 {
 
 .hamburger {
     top: 50%;
-    right: 22px;
+    right: 30px;
     color: black;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .times {
