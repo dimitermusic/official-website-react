@@ -317,6 +317,10 @@ footer {
     -webkit-appearance: none !important;
 }
 
+.subscribe {
+    width: fit-content;
+}
+
 .invisibleBtn {
     margin: 1rem;
     padding: 1rem;

@@ -7,6 +7,7 @@ export default function Signup() {
     // We are also setting their initial values to an empty string
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [robotInput, setRobotInput] = useState('');
 
     const handleInputChange = (e) => {
         // Getting the value and name of the input which triggered the change
@@ -19,6 +20,8 @@ export default function Signup() {
             setName(inputValue);
         } else if (inputType === 'EMAIL') {
             setEmail(inputValue);
+        } else if (inputType === 'b_ea9416c85051a9c2c512c1604_e8695d45d2') {
+            setRobotInput(inputValue)
         }
 
     };
@@ -46,10 +49,10 @@ export default function Signup() {
                         </div>
                         {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
                         <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden='true'><input type='text'
-                            name='b_ea9416c85051a9c2c512c1604_e8695d45d2' tabIndex='-1' value='' /></div>
-                        <div className='optionalParent'>
+                            name='b_ea9416c85051a9c2c512c1604_e8695d45d2' tabIndex='-1' value={robotInput} onChange={handleInputChange} /></div>
+                        <div>
                             <div className='clear foot'>
-                                <input type='submit' value='SUBMIT' name='subscribe' className='button btn' />
+                                <input type='submit' value='SUBSCRIBE' readOnly name='subscribe' className='button btn subscribe' />
                             </div>
                         </div>
                     </div>
