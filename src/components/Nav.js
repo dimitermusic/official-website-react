@@ -1,8 +1,11 @@
 import '../styles/style.css';
-import React, { useState } from 'react'
+import React, { useState, Suspense } from 'react'
+import BeatLoader from 'react-spinners/BeatLoader'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import scrollTo from "gatsby-plugin-smoothscroll"
 import Icons from '../components/Icons';
+
+const Landing = React.lazy(() => import('./Landing'));
 
 export default function Nav() {
 
@@ -67,6 +70,9 @@ export default function Nav() {
                     </div>
                 </div>
             </div>
+            <Suspense fallback={<BeatLoader />}>
+                <Landing />
+            </Suspense>
         </>
     )
 }

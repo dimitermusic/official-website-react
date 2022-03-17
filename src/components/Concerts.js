@@ -1,9 +1,12 @@
 import '../styles/style.css';
-import React, { useState, useEffect } from 'react';
+import BeatLoader from 'react-spinners/BeatLoader'
+import React, { useState, useEffect, Suspense } from 'react';
 const axios = require('axios');
 
 
 export default function Concerts() {
+
+    const Signup = React.lazy(() => import('./Signup'))
 
     const [concerts, setConcerts] = useState([]);
     const [error, setError] = useState(null);
@@ -53,51 +56,61 @@ export default function Concerts() {
     if (error || !concertsPresent) {
 
         return (
-            <div className='concerts'>
-                <h1>UPCOMING CONCERTS</h1>
-                <p id='coming-soon'>COMING SOON!</p>
-            </div>
+            <>
+                <div className='concerts'>
+                    <h1>UPCOMING CONCERTS</h1>
+                    <p id='coming-soon'>COMING SOON!</p>
+                </div>
+                <Suspense>
+                    <Signup />
+                </Suspense>
+            </>
         );
 
         // If no error and concerts present, map through array of concerts and dynamically render concert data.
     } else {
         return (
-            <div className='concerts' id='tour'>
-                <h1>UPCOMING CONCERTS</h1>
-                <p id='concert-disclaimer'>Please note, concert listings include both Dimiter Yordanov and Ariana Deboo
-                    (Dimiter
-                    on guitar and backup vocals).</p>
-                <div id='concert-table'>
-                    {concerts.map(concert => {
+            <>
+                <div className='concerts' id='tour'>
+                    <h1>UPCOMING CONCERTS</h1>
+                    <p id='concert-disclaimer'>Please note, concert listings include both Dimiter Yordanov and Ariana Deboo
+                        (Dimiter
+                        on guitar and backup vocals).</p>
+                    <div id='concert-table'>
+                        {concerts.map(concert => {
 
-                        let yesterday = new Date().valueOf() - 90000000;
-                        let currentConcert = new Date(concert.date).valueOf();
+                            let yesterday = new Date().valueOf() - 90000000;
+                            let currentConcert = new Date(concert.date).valueOf();
 
-                        if (currentConcert >= yesterday) {
+                            if (currentConcert >= yesterday) {
 
-                            return (
+                                return (
 
-                                <div key={concert.id} className='table-row' onClick={() => (concert.bandsInTownLink && window.open(concert.bandsInTownLink))}
-                                >
-                                    <p>{concert.date}</p>
-                                    <p>{concert.eventName}</p>
-                                    <p>{concert.city}</p>
-                                    {concert.ticketLink ?
-                                        <a className='btn' target='_blank' rel='noreferrer' href={concert.ticketLink}>TICKETS</a> :
-                                        <div className='invisibleBtn'></div>
-                                    }
+                                    <div key={concert.id} className='table-row' onClick={() => (concert.bandsInTownLink && window.open(concert.bandsInTownLink))}
+                                    >
+                                        <p>{concert.date}</p>
+                                        <p>{concert.eventName}</p>
+                                        <p>{concert.city}</p>
+                                        {concert.ticketLink ?
+                                            <a className='btn' target='_blank' rel='noreferrer' href={concert.ticketLink}>TICKETS</a> :
+                                            <div className='invisibleBtn'></div>
+                                        }
 
-                                </div>
+                                    </div>
 
-                            );
+                                );
 
-                        }
+                            }
 
-                        return concert;
+                            return concert;
 
-                    })}
-                </div>
-            </div >
+                        })}
+                    </div>
+                </div >
+                <Suspense fallback={<BeatLoader />}>
+                    <Signup />
+                </Suspense>
+            </>
         )
     }
 
