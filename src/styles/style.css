@@ -91,7 +91,7 @@ nav h1 {
 }
 
 .mobile-nav {
-    position: fixed;
+    position: sticky;
     z-index: 500;
     top: 0;
     left: 0;
@@ -437,10 +437,6 @@ footer {
 
 
 @media only screen and (max-width: 1172px) {
-
-    #landing {
-        margin-top: 100px;
-    }
 
     nav {
         display: none;
