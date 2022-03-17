@@ -39,7 +39,7 @@ export default function Landing() {
                                 </div>
                             </a>
                             <a target='_blank' rel='noreferrer' href='https://music.amazon.com/albums/B09Q112YV6'>
-                                <div className='release-btn' id='watch'>
+                                <div className='release-btn'>
                                     <img className='release-logo' src={amazon}
                                         alt='amazon music' />
                                 </div>
@@ -54,7 +54,7 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
-            <div className='videoContainer'>
+            <div className='videoContainer' id='watch'>
                 <div className='videoWrapper'>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/4RqEv8Y1CgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
