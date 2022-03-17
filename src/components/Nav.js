@@ -16,6 +16,12 @@ export default function Nav() {
         setModalDisplay('none')
     }
 
+    window.onclick = (e) => {
+        if (e.target === document.getElementById('modal')) {
+            setModalDisplay('none')
+        }
+    }
+
     return (
         <>
             <nav>
@@ -32,7 +38,7 @@ export default function Nav() {
                 <div onClick={handleOpenModal}>
                     <FaBars className='hamburger' />
                 </div>
-                <div className='modal' style={{ display: modalDisplay }}>
+                <div className='modal' style={{ display: modalDisplay }} id='modal'>
                     <div className='modal-menu'>
                         <div onClick={handleCloseModal}>
                             <FaTimes className='times' />

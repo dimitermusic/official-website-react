@@ -20,13 +20,74 @@ a {
 nav {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
     align-items: center;
-    padding: 2vh 5vw;
+    padding: 0 30px;
     background-color: #ffffff;
     box-shadow: 0 6px 8px -1px rgb(0, 0, 0, .13);
+}
+
+nav h1 {
+    margin: 14px;
+    padding: 8px 0;
+    color: black;
+    font-size: 33px;
+    text-align: center;
+}
+
+.anchors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.anchors div {
+    margin: 18px;
+    padding: 8px 0;
+    font-family: inherit;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: .1875rem;
+    color: black;
+    border-bottom: solid 4px rgba(0, 0, 0, 0);
+}
+
+.anchors div:hover {
+    border-bottom: solid 4px rgb(91, 91, 91);
+    color: rgb(91, 91, 91);
+    cursor: pointer;
+}
+
+.nav-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icons a {
+    margin: 14px;
+    padding: 8px 0;
+    border-bottom: solid 4px rgb(0, 0, 0, 0);
+}
+
+.icon {
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-icons a:hover .icon {
+    color: rgb(91, 91, 91);
+}
+
+.nav-icons a:hover {
+    border-bottom: solid 4px rgb(91, 91, 91);
 }
 
 .mobile-nav {
@@ -38,35 +99,35 @@ nav {
     display: none;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
-    padding: 2vh 5vw;
+    align-items: center;
+    padding: 24px 24px;
     background-color: #ffffff;
-    height: 9vh;
+    height: 100px;
     box-shadow: 0 6px 8px -1px rgb(0, 0, 0, .13);
 }
 
 .mobile-nav h1 {
+    left: 22px;
+    top: 50%;
     margin: 0;
-}
-
-.mobile-nav a h1 {
+    color: black;
+    font-size: 30px;
     color: black !important;
 }
 
 .hamburger {
-    position: absolute;
-    top: 2vh;
-    right: 7vw;
+    top: 50%;
+    right: 22px;
     color: black;
-    font-size: 8vw;
+    font-size: 40px;
 }
 
 .times {
     position: absolute;
-    top: 2vh;
-    right: 7vw;
+    right: 22px;
+    top: 24px;
     color: white;
-    font-size: 8vw;
+    font-size: 44px;
 }
 
 .modal {
@@ -81,6 +142,10 @@ nav {
 
 .modal-menu {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     right: 0;
     top: 0;
     width: 100%;
@@ -91,12 +156,17 @@ nav {
 }
 
 .modal-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
     padding: 0;
 }
 
 .modal-menu li {
     list-style-type: none;
-    margin: 33px;
+    margin: 22px 0;
     font-family: inherit;
     font-size: larger;
     text-align: center;
@@ -112,32 +182,6 @@ nav {
     color: #ffffff;
 }
 
-.anchors {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.anchors div {
-    margin: 24px;
-    padding: 8px 0;
-    font-family: inherit;
-    font-size: medium;
-    text-align: center;
-    font-weight: 900;
-    letter-spacing: .1875rem;
-    color: black;
-    border-bottom: solid 4px rgba(0, 0, 0, 0);
-}
-
-.anchors div:hover {
-    border-bottom: solid 4px rgb(91, 91, 91);
-    color: rgb(91, 91, 91);
-    cursor: pointer;
-}
-
 #landing {
     background-image: url('../images/lie-to-me-blur.webp');
     background-position: top 0 right 50%;
@@ -150,37 +194,6 @@ nav {
 
 footer {
     padding: 3rem 1rem 5rem;
-}
-
-.nav-icons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon {
-    margin: 8px;
-    padding: 8px 0;
-    color: black;
-    font-size: 4.5vh;
-    text-align: center;
-    text-decoration: none;
-    border-bottom: solid 4px rgb(0, 0, 0, 0);
-}
-
-.nav-icons a:hover .icon {
-    color: rgb(91, 91, 91);
-    border-bottom: solid 4px rgb(91, 91, 91);
-}
-
-nav h1 {
-    margin: 8px;
-    padding: 8px 0;
-    color: black;
-    font-size: 4vh;
-    text-align: center;
 }
 
 #release-section {
@@ -264,7 +277,7 @@ nav h1 {
 }
 
 .concerts p {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     font-size: small;
     font-weight: 700;
 }
@@ -390,13 +403,6 @@ nav h1 {
     color: rgb(128, 128, 128);
 }
 
-.required:active {
-    width: 33%;
-    height: 2rem;
-    background: none;
-    border: none;
-}
-
 .response {
     padding: 1rem;
     font-size: small;
@@ -415,7 +421,7 @@ nav h1 {
 #copyright-text {
     text-align: center;
     color: rgb(91, 91, 91);
-    font-size: x-small;
+    font-size: xx-small;
     margin-top: 1rem;
 }
 
@@ -430,10 +436,10 @@ nav h1 {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1172px) {
 
     #landing {
-        padding-top: 10vh;
+        margin-top: 100px;
     }
 
     nav {
@@ -442,12 +448,6 @@ nav h1 {
 
     .mobile-nav {
         display: flex;
-    }
-
-    .icon {
-        margin: 1rem;
-        padding: 0;
-        font-size: 5vw;
     }
 
     .icon:hover {
@@ -475,6 +475,10 @@ nav h1 {
 
     #mc_embed_signup {
         padding: 5rem 1rem !important;
+    }
+
+    .required {
+        max-width: 90% !important;
     }
 
     .mc-field-group {
