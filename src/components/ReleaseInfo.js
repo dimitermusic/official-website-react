@@ -8,7 +8,6 @@ import pandora from '../images/pandora.png'
 
 export default function ReleaseBtns() {
     return (
-
         <div className='column'>
             <img id='lie-to-me-text' src={lieToMeText} alt='dimiter lie to me text' />
             <p id='release-text'>OUT NOW</p>
