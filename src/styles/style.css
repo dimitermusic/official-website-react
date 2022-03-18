@@ -18,6 +18,12 @@ a {
     -webkit-transition: none !important;
 }
 
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
 nav {
     display: flex;
     flex-direction: row;

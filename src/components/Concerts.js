@@ -1,5 +1,5 @@
 import '../styles/style.css';
-import BeatLoader from 'react-spinners/BeatLoader'
+import Spinner from './Spinner'
 import React, { useState, useEffect, Suspense } from 'react';
 const axios = require('axios');
 
@@ -107,7 +107,7 @@ export default function Concerts() {
                         })}
                     </div>
                 </div >
-                <Suspense fallback={<BeatLoader />}>
+                <Suspense fallback={<Spinner />}>
                     <Signup />
                 </Suspense>
             </>

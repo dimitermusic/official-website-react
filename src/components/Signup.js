@@ -1,6 +1,6 @@
 import '../styles/style.css';
 import React, { useState, Suspense } from 'react';
-import BeatLoader from 'react-spinners/BeatLoader'
+import Spinner from './Spinner'
 
 export default function Signup() {
 
@@ -64,7 +64,7 @@ export default function Signup() {
                 </div>
                 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
             </div >
-            <Suspense fallback={<BeatLoader />}>
+            <Suspense fallback={<Spinner />}>
                 <Footer />
             </Suspense>
         </>
