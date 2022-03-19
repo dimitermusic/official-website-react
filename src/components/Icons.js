@@ -4,6 +4,8 @@ import { FaSpotify, FaApple, FaYoutube, FaInstagram, FaFacebook, FaTwitter, FaIm
 export default function Icons() {
 
     return (
+
+        // Font Awesome icons as React components
         <div className='nav-icons'>
             <a target='_blank' rel='noreferrer'
                 href='https://open.spotify.com/artist/6QfYumUXMvevU1TR729Jrr?si=hddGb2pdSfqz42rIsveMmg'>

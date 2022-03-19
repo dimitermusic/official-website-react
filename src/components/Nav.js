@@ -51,7 +51,7 @@ export default function Nav() {
                 }}><h1>Dimiter Yordanov</h1></div>
                 <div onClick={(e) => {
                     e.preventDefault();
-                    handleOpenModal
+                    handleOpenModal();
                 }}>
                     <FaBars className='hamburger' />
                 </div>
