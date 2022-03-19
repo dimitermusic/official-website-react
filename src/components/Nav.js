@@ -36,7 +36,7 @@ export default function Nav() {
                 <Icons />
             </nav>
             <div className='mobile-nav'>
-                <a href='#'><h1>Dimiter Yordanov</h1></a>
+                <a href='#app'><h1>Dimiter Yordanov</h1></a>
                 <div onClick={handleOpenModal}>
                     <FaBars className='hamburger' />
                 </div>
