@@ -8,18 +8,19 @@ export default function Nav() {
 
     const [modalDisplay, setModalDisplay] = useState('none');
 
-
+    // Function to handle displaying modal on hamburger icon click.
     const handleOpenModal = () => {
         setModalDisplay('flex');
     }
 
+    // Function to handle hiding modal on times icon click.
     const handleCloseModal = () => {
         setModalDisplay('none');
     }
 
+    // Function to handle hiding modal on tap outside of modal menu.
     window.onclick = (e) => {
         if (e.target === document.getElementById('modal')) {
-            e.preventDefault();
             setModalDisplay('none');
         }
     }
@@ -29,30 +30,15 @@ export default function Nav() {
             <nav>
                 <h1>Dimiter Yordanov</h1>
                 <div className='anchors'>
-                    <p onClick={(e) => {
-                        e.preventDefault();
-                        scrollTo('#watch')
-                    }}>watch</p>
-                    <p onClick={(e) => {
-                        e.preventDefault();
-                        scrollTo('#tour')
-                    }}>tour</p>
-                    <p onClick={(e) => {
-                        e.preventDefault();
-                        scrollTo('#subscribe')
-                    }}>subscribe</p>
+                    <p onClick={scrollTo('#watch')}>watch</p>
+                    <p onClick={scrollTo('#tour')}>tour</p>
+                    <p onClick={scrollTo('#subscribe')}>subscribe</p>
                 </div>
                 <Icons />
             </nav>
             <div className='mobile-nav'>
-                <div onClick={(e) => {
-                    e.preventDefault();
-                    scrollTo('#landing')
-                }}><h1>Dimiter Yordanov</h1></div>
-                <div onClick={(e) => {
-                    e.preventDefault();
-                    handleOpenModal();
-                }}>
+                <div onClick={scrollTo('#landing')}><h1>Dimiter Yordanov</h1></div>
+                <div onClick={handleOpenModal}>
                     <FaBars className='hamburger' />
                 </div>
                 <div className='modal' style={{ display: modalDisplay }} id='modal'>
@@ -62,22 +48,19 @@ export default function Nav() {
                         </div>
                         <ul>
                             <li>
-                                <div onClick={(e) => {
-                                    e.preventDefault();
+                                <div onClick={() => {
                                     scrollTo('#watch');
                                     handleCloseModal();
                                 }}>watch</div>
                             </li>
                             <li>
-                                <div onClick={(e) => {
-                                    e.preventDefault();
+                                <div onClick={() => {
                                     scrollTo('#tour');
                                     handleCloseModal();
                                 }}>tour</div>
                             </li>
                             <li>
-                                <div onClick={(e) => {
-                                    e.preventDefault();
+                                <div onClick={() => {
                                     scrollTo('#subscribe');
                                     handleCloseModal();
                                 }}>subscribe</div>

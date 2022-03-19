@@ -2,6 +2,7 @@ import '../styles/style.css'
 
 export default function Video() {
 
+    // Fluid YouTube video embedded.
     return (
         <div className='videoContainer' >
             <div className='videoWrapper'>

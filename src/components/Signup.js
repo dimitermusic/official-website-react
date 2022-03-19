@@ -3,19 +3,18 @@ import React, { useState } from 'react';
 
 export default function Signup() {
 
-    // Create state variables for the fields in the form
-    // We are also setting their initial values to an empty string
+    // Create state variables for the fields in the form and set initial values to an empty string
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [robotInput, setRobotInput] = useState('');
 
     const handleInputChange = (e) => {
-        // Getting the value and name of the input which triggered the change
+        // Get the value and name of the input which triggered the change.
         const { target } = e;
         const inputType = target.name;
         const inputValue = target.value;
 
-        // Based on the input type, we set the state of either name, email, and message.
+        // Based on the input type, we set the state or value of either name, email, and message.
         if (inputType === 'FULLNAME') {
             setName(inputValue);
         } else if (inputType === 'EMAIL') {
@@ -28,6 +27,7 @@ export default function Signup() {
 
     return (
         <>
+            {/* <!-- Begin Mailchimp Signup Form --> */}
             <div id='subscribe'>
                 <div id='mc_embed_signup'>
                     <form
@@ -59,8 +59,8 @@ export default function Signup() {
                         </div>
                     </form>
                 </div>
-                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
             </div >
+            {/* <!--End mc_embed_signup--> */}
         </>
     )
 }
