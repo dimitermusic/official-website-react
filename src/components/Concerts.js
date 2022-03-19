@@ -80,13 +80,15 @@ export default function Concerts() {
 
                                 return (
 
-                                    <div key={concert.id} className='table-row' onClick={() => (concert.bandsInTownLink && window.open(concert.bandsInTownLink))}
+                                    // If concert Bandsintown link available, add click event to go to link.
+                                    <div key={concert.id} className='table-row' onClick={() => (concert.bandsInTownLink && (window.location.href = concert.bandsInTownLink))}
                                     >
                                         <p>{concert.date}</p>
                                         <p>{concert.eventName}</p>
                                         <p>{concert.city}</p>
+                                        {/* If concert ticket link available, dynamically render button and set link to ticket link */}
                                         {concert.ticketLink ?
-                                            <a className='btn' target='_blank' rel='noreferrer' href={concert.ticketLink}>TICKETS</a> :
+                                            <a className='btn' href={concert.ticketLink}>TICKETS</a> :
                                             <div className='invisibleBtn'></div>
                                         }
 
