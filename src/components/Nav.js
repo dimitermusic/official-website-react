@@ -24,25 +24,19 @@ export default function Nav() {
         }
     }
 
-    // Function that takes in element id name and uses built in scroll method with "smooth" option.
-    const handleSmoothScroll = (elementId) => {
-        const element = document.getElementById('watch')
-        element.scrollIntoView({ behavior: 'smooth' })
-    }
-
     return (
         <>
             <nav>
                 <h1>Dimiter Yordanov</h1>
                 <div className='anchors'>
-                    <p onClick={() => handleSmoothScroll('watch')}>watch</p>
-                    <p onClick={() => handleSmoothScroll('tour')}>tour</p>
-                    <p onClick={() => handleSmoothScroll('subscribe')}>subscribe</p>
+                    <a href='#watch'>watch</a>
+                    <a href='#tour'>tour</a>
+                    <a href='#subscribe'>subscribe</a>
                 </div>
                 <Icons />
             </nav>
             <div className='mobile-nav'>
-                <div><h1>Dimiter Yordanov</h1></div>
+                <a href='#'><h1>Dimiter Yordanov</h1></a>
                 <div onClick={handleOpenModal}>
                     <FaBars className='hamburger' />
                 </div>
@@ -53,22 +47,19 @@ export default function Nav() {
                         </div>
                         <ul>
                             <li>
-                                <div onClick={() => {
-                                    handleSmoothScroll('watch')
+                                <a href='#watch' onClick={() => {
                                     handleCloseModal();
-                                }}>watch</div>
+                                }}>watch</a>
                             </li>
                             <li>
-                                <div onClick={() => {
-                                    handleSmoothScroll('tour')
+                                <a href='#tour' onClick={() => {
                                     handleCloseModal();
-                                }}>tour</div>
+                                }}>tour</a>
                             </li>
                             <li>
-                                <div onClick={() => {
-                                    handleSmoothScroll('subscribe')
+                                <a href='#subscribe' onClick={() => {
                                     handleCloseModal();
-                                }}>subscribe</div>
+                                }}>subscribe</a>
                             </li>
                         </ul>
                         <Icons />

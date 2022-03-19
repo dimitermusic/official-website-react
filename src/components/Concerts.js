@@ -54,7 +54,7 @@ export default function Concerts() {
 
         return (
             <>
-                <div className='concerts'>
+                <div className='concerts' id='tour'>
                     <h1>UPCOMING CONCERTS</h1>
                     <p id='coming-soon'>COMING SOON!</p>
                 </div>

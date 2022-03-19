@@ -51,7 +51,7 @@ nav h1 {
     align-items: center;
 }
 
-.anchors p {
+.anchors a {
     margin: 0 20px;
     padding: 8px 4px;
     font-family: inherit;
@@ -63,7 +63,7 @@ nav h1 {
     border-bottom: solid 4px rgba(0, 0, 0, 0);
 }
 
-.anchors p:hover {
+.anchors a:hover {
     border-bottom: solid 4px rgb(91, 91, 91);
     color: rgb(91, 91, 91);
     cursor: pointer;
@@ -195,11 +195,11 @@ nav h1 {
     letter-spacing: .1875rem;
 }
 
-.modal-menu li div {
+.modal-menu li a {
     color: #ffffff;
 }
 
-.modal-menu li div:hover {
+.modal-menu li a:hover {
     color: rgb(91, 91, 91);
     cursor: pointer;
 }
