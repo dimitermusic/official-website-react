@@ -1,7 +1,7 @@
 import '../styles/style.css';
+import scrollTo from "gatsby-plugin-smoothscroll"
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import scrollTo from "gatsby-plugin-smoothscroll"
 import Icons from '../components/Icons';
 
 export default function Nav() {

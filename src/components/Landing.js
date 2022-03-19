@@ -1,5 +1,4 @@
 import '../styles/style.css'
-import React from 'react'
 import lieToMe from '../images/lie-to-me.webp'
 import lieToMeText from '../images/lie-to-me-text.png'
 import spotify from '../images/Y-Spotify.png'
