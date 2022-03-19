@@ -9,13 +9,11 @@ export default function Nav() {
     const [modalDisplay, setModalDisplay] = useState('none');
 
 
-    const handleOpenModal = (e) => {
-        e.preventDefault();
+    const handleOpenModal = () => {
         setModalDisplay('flex');
     }
 
-    const handleCloseModal = (e) => {
-        e.preventDefault();
+    const handleCloseModal = () => {
         setModalDisplay('none');
     }
 
@@ -31,15 +29,30 @@ export default function Nav() {
             <nav>
                 <h1>Dimiter Yordanov</h1>
                 <div className='anchors'>
-                    <p onClick={() => scrollTo('#watch')}>watch</p>
-                    <p onClick={() => scrollTo('#tour')}>tour</p>
-                    <p onClick={() => scrollTo('#subscribe')}>subscribe</p>
+                    <p onClick={(e) => {
+                        e.preventDefault();
+                        scrollTo('#watch')
+                    }}>watch</p>
+                    <p onClick={(e) => {
+                        e.preventDefault();
+                        scrollTo('#tour')
+                    }}>tour</p>
+                    <p onClick={(e) => {
+                        e.preventDefault();
+                        scrollTo('#subscribe')
+                    }}>subscribe</p>
                 </div>
                 <Icons />
             </nav>
             <div className='mobile-nav'>
-                <div onClick={() => scrollTo('#landing')}><h1>Dimiter Yordanov</h1></div>
-                <div onClick={handleOpenModal}>
+                <div onClick={(e) => {
+                    e.preventDefault();
+                    scrollTo('#landing')
+                }}><h1>Dimiter Yordanov</h1></div>
+                <div onClick={(e) => {
+                    e.preventDefault();
+                    handleOpenModal
+                }}>
                     <FaBars className='hamburger' />
                 </div>
                 <div className='modal' style={{ display: modalDisplay }} id='modal'>
@@ -49,19 +62,22 @@ export default function Nav() {
                         </div>
                         <ul>
                             <li>
-                                <div onClick={() => {
+                                <div onClick={(e) => {
+                                    e.preventDefault();
                                     scrollTo('#watch');
                                     handleCloseModal();
                                 }}>watch</div>
                             </li>
                             <li>
-                                <div onClick={() => {
+                                <div onClick={(e) => {
+                                    e.preventDefault();
                                     scrollTo('#tour');
                                     handleCloseModal();
                                 }}>tour</div>
                             </li>
                             <li>
-                                <div onClick={() => {
+                                <div onClick={(e) => {
+                                    e.preventDefault();
                                     scrollTo('#subscribe');
                                     handleCloseModal();
                                 }}>subscribe</div>
