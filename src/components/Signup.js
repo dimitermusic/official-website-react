@@ -1,10 +1,7 @@
 import '../styles/style.css';
-import React, { useState, Suspense } from 'react';
-import Spinner from './Spinner'
+import React, { useState } from 'react';
 
 export default function Signup() {
-
-    const Footer = React.lazy(() => import('./Footer'))
 
     // Create state variables for the fields in the form
     // We are also setting their initial values to an empty string
@@ -64,9 +61,6 @@ export default function Signup() {
                 </div>
                 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
             </div >
-            <Suspense fallback={<Spinner />}>
-                <Footer />
-            </Suspense>
         </>
     )
 }

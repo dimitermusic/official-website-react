@@ -1,27 +1,28 @@
 import '../styles/style.css';
-import React, { useState, Suspense } from 'react'
+import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import scrollTo from "gatsby-plugin-smoothscroll"
 import Icons from '../components/Icons';
-import Spinner from '../components/Spinner';
-
-const Landing = React.lazy(() => import('./Landing'));
 
 export default function Nav() {
 
     const [modalDisplay, setModalDisplay] = useState('none');
 
-    function handleOpenModal() {
-        setModalDisplay('flex')
+
+    const handleOpenModal = (e) => {
+        e.preventDefault();
+        setModalDisplay('flex');
     }
 
-    function handleCloseModal() {
-        setModalDisplay('none')
+    const handleCloseModal = (e) => {
+        e.preventDefault();
+        setModalDisplay('none');
     }
 
     window.onclick = (e) => {
         if (e.target === document.getElementById('modal')) {
-            setModalDisplay('none')
+            e.preventDefault();
+            setModalDisplay('none');
         }
     }
 
@@ -70,9 +71,6 @@ export default function Nav() {
                     </div>
                 </div>
             </div>
-            <Suspense fallback={<Spinner />}>
-                <Landing />
-            </Suspense>
         </>
     )
 }

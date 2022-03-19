@@ -123,11 +123,19 @@ nav h1 {
     color: black !important;
 }
 
+.mobile-nav h1:hover {
+    cursor: pointer;
+}
+
 .hamburger {
     top: 50%;
     right: 30px;
     color: black;
     font-size: 30px;
+}
+
+.hamburger:hover {
+    cursor: pointer;
 }
 
 .times {

@@ -1,12 +1,9 @@
 import '../styles/style.css';
-import Spinner from './Spinner'
-import React, { useState, useEffect, Suspense } from 'react';
+import React, { useState, useEffect } from 'react';
 const axios = require('axios');
 
 
 export default function Concerts() {
-
-    const Signup = React.lazy(() => import('./Signup'))
 
     const [concerts, setConcerts] = useState([]);
     const [error, setError] = useState(null);
@@ -61,9 +58,6 @@ export default function Concerts() {
                     <h1>UPCOMING CONCERTS</h1>
                     <p id='coming-soon'>COMING SOON!</p>
                 </div>
-                <Suspense>
-                    <Signup />
-                </Suspense>
             </>
         );
 
@@ -107,9 +101,6 @@ export default function Concerts() {
                         })}
                     </div>
                 </div >
-                <Suspense fallback={<Spinner />}>
-                    <Signup />
-                </Suspense>
             </>
         )
     }
