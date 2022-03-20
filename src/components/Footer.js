@@ -10,7 +10,7 @@ export default function Footer() {
     return (
         <footer>
             <Icons />
-            <p id='copyright-text'>© {thisYear} Dimiter Yordanov. All Rights Reserved. Powered by <a className='github-link' href={gitHubLink} target='_blank' rel='noreferrer'>Dimiter Yordanov</a>.</p>
+            <p id='copyright-text'>© {thisYear} Dimiter Yordanov. All Rights Reserved. Powered by <a className='github-link' href={gitHubLink}>Dimiter Yordanov</a>.</p>
         </footer>
     )
 }
