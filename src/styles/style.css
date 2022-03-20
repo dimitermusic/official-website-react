@@ -52,6 +52,11 @@ nav {
     transition: all .5s;
 }
 
+.title {
+    margin: 10px 16px 0;
+    width: 200px;
+}
+
 .anchors {
     display: flex;
     flex-direction: row;
@@ -484,6 +489,10 @@ footer {
 
     nav {
         display: none;
+    }
+
+    .title {
+        margin: 10px 0 0;
     }
 
     .mobile-nav {

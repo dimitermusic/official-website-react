@@ -1,5 +1,6 @@
 import '../styles/style.css';
 import { useState } from 'react';
+import title from '../images/dimiter-yordanov-text.png'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Icons from '../components/Icons';
 
@@ -47,7 +48,7 @@ export default function Nav() {
     return (
         <>
             <nav id='nav'>
-                <a href='#app'><h1>Dimiter Yordanov</h1></a>
+                <a href='#app'><img src={title} className='title'></img></a>
                 <div className='anchors'>
                     <a href='#watch'>watch</a>
                     <a href='#tour'>tour</a>
@@ -56,7 +57,7 @@ export default function Nav() {
                 <Icons />
             </nav>
             <div className='mobile-nav' id='mobile-nav'>
-                <a href='#app'><h1>Dimiter Yordanov</h1></a>
+                <a href='#app'><img src={title} className='title'></img></a>
                 <div onClick={handleOpenModal}>
                     <FaBars className='hamburger' />
                 </div>
