@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: monospace;
+    font-family: AkzidenzGroteskBQ-Ext, Helvatica, Arial;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     max-width: 100%;
@@ -15,8 +15,18 @@ body {
     padding: 0;
 }
 
+h1 {
+    margin: 0;
+    padding: 8px;
+    color: black;
+    font-size: 33px;
+    text-align: center;
+    border-bottom: solid 4px rgba(0, 0, 0, 0);
+}
+
 a {
     text-decoration: none;
+    cursor: pointer;
     transition: none !important;
     -webkit-transition: none !important;
 }
@@ -28,6 +38,9 @@ a {
 }
 
 nav {
+    position: sticky;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
@@ -36,15 +49,7 @@ nav {
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 6px 8px -1px rgb(0, 0, 0, .13);
-}
-
-h1 {
-    margin: 0;
-    padding: 8px;
-    color: black;
-    font-size: 33px;
-    text-align: center;
-    border-bottom: solid 4px rgba(0, 0, 0, 0);
+    transition: all .5s;
 }
 
 .anchors {
@@ -58,7 +63,7 @@ h1 {
     margin: 0 20px;
     padding: 8px 4px;
     font-family: inherit;
-    font-size: 17px;
+    font-size: 18px;
     text-align: center;
     font-weight: 900;
     letter-spacing: .1875rem;
@@ -67,8 +72,8 @@ h1 {
 }
 
 .anchors a:hover {
-    border-bottom: solid 4px rgb(91, 91, 91);
-    color: rgb(91, 91, 91);
+    border-bottom: solid 4px rgb(147, 147, 147);
+    color: rgb(147, 147, 147);
     cursor: pointer;
 }
 
@@ -94,16 +99,16 @@ h1 {
 }
 
 .nav-icons a:hover .icon {
-    color: rgb(91, 91, 91);
+    color: rgb(147, 147, 147);
 }
 
 .nav-icons a:hover {
-    border-bottom: solid 4px rgb(91, 91, 91);
+    border-bottom: solid 4px rgb(147, 147, 147);
 }
 
 .mobile-nav {
     position: sticky;
-    z-index: 500;
+    z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
@@ -115,14 +120,15 @@ h1 {
     background-color: #ffffff;
     height: 100px;
     box-shadow: 0 6px 8px -1px rgb(0, 0, 0, .13);
+    transition: all .5s;
 }
 
 .mobile-nav h1 {
     left: 30px;
     top: 50%;
     margin: 0;
+    padding: 0;
     color: black;
-    font-size: 30px;
     color: black !important;
 }
 
@@ -134,7 +140,7 @@ h1 {
     top: 50%;
     right: 30px;
     color: black;
-    font-size: 30px;
+    font-size: 33px;
 }
 
 .hamburger:hover {
@@ -146,11 +152,11 @@ h1 {
     right: 24px;
     top: 32px;
     color: white;
-    font-size: 30px;
+    font-size: 33px;
 }
 
 .times:hover {
-    color: rgb(91, 91, 91);
+    color: rgb(147, 147, 147);
     cursor: pointer;
 }
 
@@ -192,7 +198,7 @@ h1 {
     list-style-type: none;
     margin: 22px 0;
     font-family: inherit;
-    font-size: x-large;
+    font-size: large;
     text-align: center;
     font-weight: 900;
     letter-spacing: .1875rem;
@@ -203,7 +209,7 @@ h1 {
 }
 
 .modal-menu li a:hover {
-    color: rgb(91, 91, 91);
+    color: rgb(147, 147, 147);
     cursor: pointer;
 }
 
@@ -222,7 +228,7 @@ h1 {
 }
 
 footer {
-    padding: 3rem 3rem 5rem;
+    padding: 3rem 2rem 5rem;
 }
 
 #release-section {
@@ -260,7 +266,7 @@ footer {
     flex-direction: column;
     align-items: center;
     color: white;
-    font-size: 2.7rem;
+    font-size: 1.7rem;
 }
 
 .release-btn {
@@ -311,16 +317,16 @@ footer {
 
 .concerts p {
     margin-bottom: 3rem;
-    font-size: medium;
+    font-size: small;
     font-weight: 400;
 }
 
 #coming-soon {
     margin: 3rem;
     font-family: inherit;
-    font-size: medium;
+    font-size: large;
     text-align: center;
-    font-weight: 900;
+    font-weight: 400;
     letter-spacing: .1875rem;
     color: black;
 }
@@ -341,7 +347,7 @@ footer {
     border-radius: 0 !important;
     color: #ffffff;
     font: inherit;
-    font-size: large;
+    font-size: small;
     font-weight: 900;
     letter-spacing: .1875rem;
     cursor: pointer;
@@ -362,7 +368,7 @@ footer {
     border-radius: 0 !important;
     color: none !important;
     font: inherit;
-    font-size: large;
+    font-size: small;
     font-weight: 900;
     letter-spacing: .1875rem;
     outline: none;
@@ -378,7 +384,7 @@ footer {
     margin: 1rem;
     width: 25%;
     font-family: inherit;
-    font-size: large;
+    font-size: small;
     text-align: left;
     font-weight: 900;
     text-transform: uppercase;
@@ -418,7 +424,7 @@ footer {
 .required {
     margin: 1rem !important;
     padding: 0.5rem 0;
-    width: 28rem !important;
+    width: 22rem !important;
     height: 2.5rem !important;
     border: none;
     border-radius: 0 !important;
@@ -426,7 +432,7 @@ footer {
     color: black !important;
     background: none !important;
     box-shadow: none !important;
-    font-size: large;
+    font-size: small;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .1875rem;
@@ -435,7 +441,7 @@ footer {
 }
 
 ::placeholder {
-    font-size: large;
+    font-size: small;
     text-transform: uppercase;
     letter-spacing: .1875rem;
     color: rgb(65, 65, 65);
@@ -459,7 +465,7 @@ footer {
 #copyright-text {
     text-align: center;
     color: rgb(91, 91, 91);
-    font-size: x-small;
+    font-size: xx-small;
     margin-top: 1rem;
 }
 
@@ -469,8 +475,8 @@ footer {
 }
 
 .github-link:hover {
-    color: rgb(113, 113, 113);
-    border-bottom: solid 1px rgb(113, 113, 113);
+    color: rgb(172, 172, 172);
+    border-bottom: solid 1px rgb(172, 172, 172);
 }
 
 

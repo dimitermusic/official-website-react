@@ -55,7 +55,7 @@ export default function Concerts() {
         return (
             <>
                 <div className='concerts' id='tour'>
-                    <h1>UPCOMING CONCERTS</h1>
+                    <h1>TOUR</h1>
                     <p id='coming-soon'>COMING SOON!</p>
                 </div>
             </>
@@ -66,7 +66,7 @@ export default function Concerts() {
         return (
             <>
                 <div className='concerts' id='tour'>
-                    <h1>UPCOMING CONCERTS</h1>
+                    <h1>TOUR</h1>
                     <p id='concert-disclaimer'>Please note, concert listings include both Dimiter Yordanov and Ariana Deboo
                         (Dimiter
                         on guitar and backup vocals).</p>

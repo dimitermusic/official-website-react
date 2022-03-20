@@ -17,6 +17,26 @@ export default function Nav() {
         setModalDisplay('none');
     }
 
+    // Funtion to handle hiding nav bar when scrolling down and showing when scrolling up
+    let prevScrollPos = window.pageYOffset;
+    const handleNavBarHide = () => {
+        let currentScrollPos = window.pageYOffset;
+        if (prevScrollPos > currentScrollPos) {
+            document.getElementById('nav').style.top = '0';
+            document.getElementById('nav').style.boxShadow = '0 6px 8px -1px rgb(0, 0, 0, .13)';
+            document.getElementById('mobile-nav').style.top = '0';
+            document.getElementById('mobile-nav').style.boxShadow = '0 6px 8px -1px rgb(0, 0, 0, .13)';
+        } else {
+            document.getElementById('nav').style.top = `-${document.getElementById('nav').offsetHeight}px`;
+            document.getElementById('nav').style.boxShadow = 'none';
+            document.getElementById('mobile-nav').style.top = '-100px';
+            document.getElementById('mobile-nav').style.boxShadow = 'none';
+        }
+        prevScrollPos = currentScrollPos;
+    }
+
+    window.onscroll = handleNavBarHide
+
     // Function to handle hiding modal on tap outside of modal menu.
     window.onclick = (e) => {
         if (e.target === document.getElementById('modal')) {
@@ -26,8 +46,8 @@ export default function Nav() {
 
     return (
         <>
-            <nav>
-                <h1>Dimiter Yordanov</h1>
+            <nav id='nav'>
+                <a href='#app'><h1>Dimiter Yordanov</h1></a>
                 <div className='anchors'>
                     <a href='#watch'>watch</a>
                     <a href='#tour'>tour</a>
@@ -35,7 +55,7 @@ export default function Nav() {
                 </div>
                 <Icons />
             </nav>
-            <div className='mobile-nav'>
+            <div className='mobile-nav' id='mobile-nav'>
                 <a href='#app'><h1>Dimiter Yordanov</h1></a>
                 <div onClick={handleOpenModal}>
                     <FaBars className='hamburger' />
