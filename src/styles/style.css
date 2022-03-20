@@ -53,7 +53,7 @@ nav {
 }
 
 .title {
-    margin: 10px 16px 0;
+    margin: 5px 33px 0;
     width: 200px;
 }
 
@@ -68,7 +68,7 @@ nav {
     margin: 0 20px;
     padding: 8px 4px;
     font-family: inherit;
-    font-size: 18px;
+    font-size: 17px;
     text-align: center;
     font-weight: 900;
     letter-spacing: .1875rem;
@@ -88,6 +88,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 0 19px;
 }
 
 .nav-icons a {

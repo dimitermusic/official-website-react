@@ -48,7 +48,7 @@ export default function Nav() {
     return (
         <>
             <nav id='nav'>
-                <a href='#app'><img src={title} className='title'></img></a>
+                <a href='#app'><img src={title} className='title' alt='dimiter yordanov'></img></a>
                 <div className='anchors'>
                     <a href='#watch'>watch</a>
                     <a href='#tour'>tour</a>
@@ -57,7 +57,7 @@ export default function Nav() {
                 <Icons />
             </nav>
             <div className='mobile-nav' id='mobile-nav'>
-                <a href='#app'><img src={title} className='title'></img></a>
+                <a href='#app'><img src={title} className='title' alt='dimiter yordanov'></img></a>
                 <div onClick={handleOpenModal}>
                     <FaBars className='hamburger' />
                 </div>
@@ -83,7 +83,7 @@ export default function Nav() {
                                 }}>subscribe</a>
                             </li>
                         </ul>
-                        <Icons />
+                        <Icons className='modal-icons' />
                     </div>
                 </div>
             </div>
