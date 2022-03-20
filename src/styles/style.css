@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: AkzidenzGroteskBQ-Ext, Helvatica, Arial;
+    font-family: monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     max-width: 100%;
@@ -38,9 +38,9 @@ nav {
     box-shadow: 0 6px 8px -1px rgb(0, 0, 0, .13);
 }
 
-nav h1 {
+h1 {
     margin: 0;
-    padding: 8px 14px;
+    padding: 8px;
     color: black;
     font-size: 33px;
     text-align: center;
@@ -192,7 +192,7 @@ nav h1 {
     list-style-type: none;
     margin: 22px 0;
     font-family: inherit;
-    font-size: larger;
+    font-size: x-large;
     text-align: center;
     font-weight: 900;
     letter-spacing: .1875rem;
@@ -222,7 +222,7 @@ nav h1 {
 }
 
 footer {
-    padding: 3rem 1rem 5rem;
+    padding: 3rem 3rem 5rem;
 }
 
 #release-section {
@@ -260,7 +260,7 @@ footer {
     flex-direction: column;
     align-items: center;
     color: white;
-    font-size: 2rem;
+    font-size: 2.7rem;
 }
 
 .release-btn {
@@ -280,6 +280,10 @@ footer {
 
 .videoContainer {
     padding: 10vh 22.5vw;
+}
+
+.videoContainer h1 {
+    margin-bottom: 2rem;
 }
 
 .videoWrapper {
@@ -307,8 +311,8 @@ footer {
 
 .concerts p {
     margin-bottom: 3rem;
-    font-size: small;
-    font-weight: 700;
+    font-size: medium;
+    font-weight: 400;
 }
 
 #coming-soon {
@@ -337,7 +341,7 @@ footer {
     border-radius: 0 !important;
     color: #ffffff;
     font: inherit;
-    font-size: small;
+    font-size: large;
     font-weight: 900;
     letter-spacing: .1875rem;
     cursor: pointer;
@@ -358,7 +362,7 @@ footer {
     border-radius: 0 !important;
     color: none !important;
     font: inherit;
-    font-size: small;
+    font-size: large;
     font-weight: 900;
     letter-spacing: .1875rem;
     outline: none;
@@ -374,7 +378,7 @@ footer {
     margin: 1rem;
     width: 25%;
     font-family: inherit;
-    font-size: small;
+    font-size: large;
     text-align: left;
     font-weight: 900;
     text-transform: uppercase;
@@ -414,7 +418,7 @@ footer {
 .required {
     margin: 1rem !important;
     padding: 0.5rem 0;
-    width: 20rem !important;
+    width: 28rem !important;
     height: 2.5rem !important;
     border: none;
     border-radius: 0 !important;
@@ -422,6 +426,7 @@ footer {
     color: black !important;
     background: none !important;
     box-shadow: none !important;
+    font-size: large;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .1875rem;
@@ -430,7 +435,7 @@ footer {
 }
 
 ::placeholder {
-    font-size: small;
+    font-size: large;
     text-transform: uppercase;
     letter-spacing: .1875rem;
     color: rgb(65, 65, 65);
@@ -454,7 +459,7 @@ footer {
 #copyright-text {
     text-align: center;
     color: rgb(91, 91, 91);
-    font-size: xx-small;
+    font-size: x-small;
     margin-top: 1rem;
 }
 
