@@ -260,6 +260,10 @@ footer {
     align-items: center;
 }
 
+#col-2 {
+    display: none;
+}
+
 #lie-to-me-text {
     margin-top: 2rem;
     width: 147px;

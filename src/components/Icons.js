@@ -1,4 +1,4 @@
-import '../styles/style.css'
+import '../styles/style.css';
 import { FaSpotify, FaApple, FaYoutube, FaInstagram, FaFacebook, FaTwitter, FaImdb } from 'react-icons/fa';
 
 export default function Icons() {

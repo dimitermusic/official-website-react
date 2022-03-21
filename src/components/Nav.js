@@ -1,6 +1,6 @@
 import '../styles/style.css';
 import { useState } from 'react';
-import title from '../images/dimiter-yordanov-text.png'
+import title from '../images/dimiter-yordanov-text.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Icons from '../components/Icons';
 
@@ -22,16 +22,18 @@ export default function Nav() {
     let prevScrollPos = window.pageYOffset;
     const handleNavBarHide = () => {
         let currentScrollPos = window.pageYOffset;
+        let nav = document.getElementById('nav');
+        let mobileNav = document.getElementById('mobile-nav');
         if (prevScrollPos > currentScrollPos) {
-            document.getElementById('nav').style.top = '0';
-            document.getElementById('nav').style.boxShadow = '0 6px 8px -1px rgb(0, 0, 0, .13)';
-            document.getElementById('mobile-nav').style.top = '0';
-            document.getElementById('mobile-nav').style.boxShadow = '0 6px 8px -1px rgb(0, 0, 0, .13)';
+            nav.style.top = '0';
+            nav.style.boxShadow = '0 6px 8px -1px rgb(0, 0, 0, .13)';
+            mobileNav.style.top = '0';
+            mobileNav.style.boxShadow = '0 6px 8px -1px rgb(0, 0, 0, .13)';
         } else {
-            document.getElementById('nav').style.top = `-${document.getElementById('nav').offsetHeight}px`;
+            nav.style.top = `-${nav.offsetHeight}px`;
             document.getElementById('nav').style.boxShadow = 'none';
-            document.getElementById('mobile-nav').style.top = '-100px';
-            document.getElementById('mobile-nav').style.boxShadow = 'none';
+            mobileNav.style.top = '-100px';
+            mobileNav.style.boxShadow = 'none';
         }
         prevScrollPos = currentScrollPos;
     }
@@ -48,7 +50,7 @@ export default function Nav() {
     return (
         <>
             <nav id='nav'>
-                <a href='#app'><img src={title} className='title' alt='dimiter yordanov'></img></a>
+                <a href='#app'><img src={title} className='title' alt='dimiter yordanov' /></a>
                 <div className='anchors'>
                     <a href='#watch'>watch</a>
                     <a href='#tour'>tour</a>
@@ -57,7 +59,7 @@ export default function Nav() {
                 <Icons />
             </nav>
             <div className='mobile-nav' id='mobile-nav'>
-                <a href='#app'><img src={title} className='title' alt='dimiter yordanov'></img></a>
+                <a href='#app'><img src={title} className='title' alt='dimiter yordanov' /></a>
                 <div onClick={handleOpenModal}>
                     <FaBars className='hamburger' />
                 </div>
