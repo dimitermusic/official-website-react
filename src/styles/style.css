@@ -52,9 +52,9 @@ nav {
     transition: all .3s;
 }
 
-.title {
-    margin: 5px 33px 0;
-    width: 200px;
+.logo {
+    margin: 0 33px 10px;
+    width: 274px;
 }
 
 .anchors {
@@ -434,7 +434,7 @@ footer {
 .required {
     margin: 1rem !important;
     padding: 0.5rem 0;
-    width: 22rem !important;
+    width: 20rem !important;
     height: 2.5rem !important;
     border: none;
     border-radius: 0 !important;
@@ -496,8 +496,8 @@ footer {
         display: none;
     }
 
-    .title {
-        margin: 10px 0 0;
+    .logo {
+        margin-left: 0;
     }
 
     .mobile-nav {
