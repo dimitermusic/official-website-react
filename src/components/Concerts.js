@@ -9,7 +9,7 @@ export default function Concerts() {
 
   useEffect(() => {
     // GET concerts from custom API.
-    const API = "https://api.dimitermusic.com/concerts";
+    const API = `https://api.dimitermusic.com/APIKEY=${process.env.API_KEY}/concerts`;
     axios
       .get(API)
       .then((data) => {
