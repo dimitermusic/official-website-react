@@ -1,14 +1,13 @@
-import Nav from './components/Nav'
-import Landing from './components/Landing'
-import Video from './components/Video'
-import Concerts from './components/Concerts'
-import Signup from './components/Signup'
-import Footer from './components/Footer'
+import Nav from "./components/Nav";
+import Landing from "./components/Landing";
+import Video from "./components/Video";
+import Concerts from "./components/Concerts";
+import Signup from "./components/Signup";
+import Footer from "./components/Footer";
 
 export default function App() {
-
   return (
-    <div className='App' id='app'>
+    <div className="App" id="app">
       <Nav />
       <Landing />
       <Video />
