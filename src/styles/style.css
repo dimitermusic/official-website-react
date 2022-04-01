@@ -325,6 +325,10 @@ footer {
     text-align: center;
 }
 
+.concerts h1 {
+    margin-bottom: 2rem;
+}
+
 .concerts p {
     margin-bottom: 3rem;
     font-size: small;
