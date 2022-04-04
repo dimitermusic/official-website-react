@@ -355,7 +355,7 @@ footer {
 .btn {
     margin: 1rem;
     padding: 1rem;
-    width: 120px;
+    width: 150px;
     border: none !important;
     background-color: #ce3221;
     border-radius: 0 !important;
@@ -371,22 +371,6 @@ footer {
 
 .subscribe {
     width: fit-content;
-}
-
-.invisibleBtn {
-    margin: 1rem;
-    padding: 1rem;
-    width: 120px;
-    border: none !important;
-    background-color: none !important;
-    border-radius: 0 !important;
-    color: none !important;
-    font: inherit;
-    font-size: small;
-    font-weight: 900;
-    letter-spacing: .1875rem;
-    outline: none;
-    -webkit-appearance: none !important;
 }
 
 .btn:hover {

@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="App" id="app">
+    <div className="App" id="home">
       <Nav />
       <Landing />
       <Video />

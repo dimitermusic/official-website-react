@@ -71,7 +71,9 @@ export default function Concerts() {
                       TICKETS
                     </a>
                   ) : (
-                    <div className="invisibleBtn"></div>
+                    <a className="btn" href={concert.bandsInTownLink}>
+                      MORE INFO
+                    </a>
                   )}
                 </div>
               );
