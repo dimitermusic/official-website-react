@@ -48,38 +48,37 @@ export default function Concerts() {
       <div className="concerts" id="tour">
         <h1>TOUR</h1>
         <div id="concert-table">
-          {concerts.map((concert) => {
-            let yesterday = new Date().valueOf() - 90000000;
-            let currentConcert = new Date(concert.date).valueOf();
-            if (currentConcert >= yesterday) {
-              return (
-                // If concert Bandsintown link available, add click event to go to link.
-                <div
-                  key={concert.id}
-                  className="table-row"
-                  onClick={() =>
-                    concert.bandsInTownLink &&
-                    (window.location.href = concert.bandsInTownLink)
-                  }
-                >
-                  <p>{concert.date}</p>
-                  <p>{concert.eventName}</p>
-                  <p>{concert.city}</p>
-                  {/* If concert ticket link available, dynamically render button and set link to ticket link */}
-                  {concert.ticketLink ? (
-                    <a className="btn" href={concert.ticketLink}>
-                      TICKETS
-                    </a>
-                  ) : (
-                    <a className="btn" href={concert.bandsInTownLink}>
-                      MORE INFO
-                    </a>
-                  )}
-                </div>
-              );
-            }
-            return concert;
-          })}
+          {concerts
+            .filter((concert) => {
+              let yesterday = new Date().valueOf() - 90000000;
+              let currentConcert = new Date(concert.date).valueOf();
+              return currentConcert >= yesterday;
+            })
+            .map((concert) => (
+              // If concert Bandsintown link available, add click event to go to link.
+              <div
+                key={concert.id}
+                className="table-row"
+                onClick={() =>
+                  concert.bandsInTownLink &&
+                  (window.location.href = concert.bandsInTownLink)
+                }
+              >
+                <p>{concert.date}</p>
+                <p>{concert.eventName}</p>
+                <p>{concert.city}</p>
+                {/* If concert ticket link available, dynamically render button and set link to ticket link */}
+                {concert.ticketLink ? (
+                  <a className="btn" href={concert.ticketLink}>
+                    TICKETS
+                  </a>
+                ) : (
+                  <a className="btn" href={concert.bandsInTownLink}>
+                    MORE INFO
+                  </a>
+                )}
+              </div>
+            ))}
         </div>
       </div>
     );
