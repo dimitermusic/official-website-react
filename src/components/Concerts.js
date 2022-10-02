@@ -60,8 +60,8 @@ export default function Concerts() {
                 key={concert.id}
                 className="table-row"
                 onClick={() =>
-                  concert.bandsInTownLink &&
-                  (window.location.href = concert.bandsInTownLink)
+                  concert.infoLink &&
+                  (window.location.href = concert.infoLink)
                 }
               >
                 <p>{concert.date}</p>
@@ -73,7 +73,7 @@ export default function Concerts() {
                     TICKETS
                   </a>
                 ) : (
-                  <a className="btn" href={concert.bandsInTownLink}>
+                  <a className="btn" href={concert.infoLink}>
                     MORE INFO
                   </a>
                 )}
