@@ -18,35 +18,35 @@ export default function Landing() {
     <div id='landing'>
       <div id='release-section'>
         <div className='column'>
-          <img onLoad={handleImageLoaded} id='album-cover' src={lieToMe} />
+          <img onLoad={handleImageLoaded} id='album-cover' src={lieToMe} alt='album cover'/>
         </div>
         <div className='column' id='col-2'>
-          <img id='lie-to-me-text' src={lieToMeText} />
+          <img id='lie-to-me-text' src={lieToMeText} alt='lie to me'/>
           <p id='release-text'>OUT NOW</p>
           <div className='release-btn-group'>
             <a href='https://open.spotify.com/album/2tqOIJ7JQGANnCAE25bsyx?si=2S13s8dgTL-IUj2e9A7jJQ'>
               <div className='release-btn'>
-                <img className='release-logo' src={spotify} />
+                <img className='release-logo' src={spotify} alt='spotify'/>
               </div>
             </a>
             <a href='https://music.apple.com/us/album/lie-to-me-ep/1603910239'>
               <div className='release-btn'>
-                <img className='release-logo' src={apple} />
+                <img className='release-logo' src={apple} alt='apple'/>
               </div>
             </a>
             <a href='https://music.apple.com/us/album/lie-to-me-ep/1603910239?ign-itscg=30440&ign-itsct=catchall_p2'>
               <div className='release-btn'>
-                <img className='release-logo' src={itunes} />
+                <img className='release-logo' src={itunes} alt='itunes'/>
               </div>
             </a>
             <a href='https://music.amazon.com/albums/B09Q112YV6'>
               <div className='release-btn'>
-                <img className='release-logo' src={amazon} />
+                <img className='release-logo' src={amazon} alt='amazon'/>
               </div>
             </a>
             <a href='https://www.pandora.com/artist/dimiter-yordanov/lie-to-me-single/ALh7qfx2gl7ch3c'>
               <div className='release-btn'>
-                <img className='release-logo' src={pandora} />
+                <img className='release-logo' src={pandora} alt='pandora'/>
               </div>
             </a>
           </div>
