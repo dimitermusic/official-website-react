@@ -1,5 +1,5 @@
 import '../styles/style.css';
-import Icons from '../components/Icons';
+import Icons from './Icons';
 
 export default function Footer() {
 
