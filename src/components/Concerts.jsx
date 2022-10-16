@@ -10,15 +10,13 @@ export default function Concerts() {
   useEffect(() => {
     // GET concerts from custom API.
     const API = `https://api.dimitermusic.com/APIKEY=${process.env.REACT_APP_API_KEY}/concerts`;
-    axios
-      .get(API)
-      .then(({ concerts }) => {
-        const upcomingConcerts = concerts.filter((concert) => {
+    axios.get(API)
+      .then(({ data }) => {
+        const upcomingConcerts = data.filter((concert) => {
           let yesterday = new Date().valueOf() - 90000000;
           let currentConcert = new Date(concert.date).valueOf();
           return currentConcert >= yesterday;
         })
-
         setConcerts(upcomingConcerts);
       })
       .catch((error) => {
