@@ -12,13 +12,14 @@ export default function Concerts() {
     const API = `https://api.dimitermusic.com/APIKEY=${process.env.REACT_APP_API_KEY}/concerts`;
     axios
       .get(API)
-      .then((data) => {
-        let sortedConcerts = data.data.sort((a, b) => {
-          let da = new Date(a.date);
-          let db = new Date(b.date);
-          return da - db;
-        });
-        setConcerts(sortedConcerts);
+      .then(({ concerts }) => {
+        const upcomingConcerts = concerts.filter((concert) => {
+          let yesterday = new Date().valueOf() - 90000000;
+          let currentConcert = new Date(concert.date).valueOf();
+          return currentConcert >= yesterday;
+        })
+
+        setConcerts(upcomingConcerts);
       })
       .catch((error) => {
         setError(error);
@@ -49,10 +50,10 @@ export default function Concerts() {
         <h1>TOUR</h1>
         <div id="concert-table">
           {concerts
-            .filter((concert) => {
-              let yesterday = new Date().valueOf() - 90000000;
-              let currentConcert = new Date(concert.date).valueOf();
-              return currentConcert >= yesterday;
+            .sort((a, b) => {
+              const da = new Date(a.date);
+              const db = new Date(b.date);
+              return da - db;
             })
             .map((concert) => (
               // If concert Bandsintown link available, add click event to go to link.
