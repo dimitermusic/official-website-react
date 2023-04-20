@@ -14,5 +14,13 @@
         "date": "July 9, 2023",
         "time": "7:00PM",
         "infoLink": "https://sunsettavern.com/"
+    },
+    {
+        "eventName": "College Club Seattle",
+        "city": "Seattle, Wa",
+        "venue": "College Club Seattle",
+        "date": "Aug 31, 2023",
+        "time": "6:30PM",
+        "infoLink": "https://www.collegeclubseattle.com"
     }
 ]
