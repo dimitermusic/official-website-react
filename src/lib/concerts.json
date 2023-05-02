@@ -22,5 +22,13 @@
         "date": "Aug 31, 2023",
         "time": "6:30PM",
         "infoLink": "https://www.collegeclubseattle.com"
+    },
+    {
+        "eventName": "College Club Seattle",
+        "city": "Seattle, Wa",
+        "venue": "College Club Seattle",
+        "date": "June 8, 2023",
+        "time": "6:30PM",
+        "infoLink": "https://www.collegeclubseattle.com"
     }
 ]
