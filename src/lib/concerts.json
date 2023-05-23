@@ -30,5 +30,21 @@
         "date": "June 8, 2023",
         "time": "6:30PM",
         "infoLink": "https://www.collegeclubseattle.com"
+    },
+    {
+        "eventName": "The Lounge at Moe's",
+        "city": "Arlington, Wa",
+        "venue": "The Lounge at Moe's",
+        "date": "June 23, 2023",
+        "time": "7:00PM",
+        "infoLink": "https://www.theloungecocktailbar.com"
+    },
+    {
+        "eventName": "Farewell Festival w/ Kristen Palmer - AC RETREAT",
+        "city": "Silvana, Wa",
+        "venue": "AC RETREAT",
+        "date": "July 1, 2023",
+        "time": "5:30PM",
+        "infoLink": "https://www.athleisurecollective.com/events/farewell-festival"
     }
 ]
