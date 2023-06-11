@@ -46,5 +46,13 @@
         "date": "July 1, 2023",
         "time": "5:30PM",
         "infoLink": "https://www.athleisurecollective.com/events/farewell-festival"
+    },
+    {
+        "eventName": "Sunset Tavern",
+        "city": "Seattle, Wa",
+        "venue": "Sunset Tavern",
+        "date": "August 28, 2023",
+        "time": "7:00PM",
+        "ticketLink": "https://www.ticketweb.com/event/dimiter-yordanov-miller-tracy-morgan-sunset-tavern-tickets/13318808?pl=sunset"
     }
 ]
