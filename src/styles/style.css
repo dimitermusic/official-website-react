@@ -53,8 +53,8 @@ nav {
 }
 
 .logo {
-    margin: 0 33px 10px;
-    width: 274px;
+    margin: 0 33px;
+    width: 147px;
 }
 
 .anchors {
@@ -66,7 +66,7 @@ nav {
 
 .anchors a {
     margin: 0 20px;
-    padding: 8px 4px;
+    padding: 12px 4px 8px;
     font-family: inherit;
     font-size: 17px;
     text-align: center;
@@ -93,7 +93,7 @@ nav {
 
 .nav-icons a {
     margin: 0;
-    padding: 8px 14px;
+    padding: 12px 14px 8px;
     border-bottom: solid 4px rgb(0, 0, 0, 0);
 }
 
