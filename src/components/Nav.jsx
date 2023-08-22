@@ -1,5 +1,5 @@
 import "../styles/style.css";
-import logo from "../images/dimiter-logo.png";
+import logo from "../images/Dimiter Logo.png";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Icons from "./Icons";

@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: AkzidenzGroteskBQ-Ext, Helvatica, Arial;
+    font-family: Montserrat, Helvatica, Arial;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     max-width: 100%;
@@ -54,7 +54,7 @@ nav {
 
 .logo {
     margin: 0 33px;
-    width: 147px;
+    width: 174px;
 }
 
 .anchors {
