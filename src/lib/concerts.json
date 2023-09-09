@@ -60,20 +60,23 @@
         "city": "Seattle, Wa",
         "venue": "Sunset Tavern",
         "date": "December 6, 2023",
-        "time": "7:00PM"
+        "time": "7:00PM",
+        "infoLink": "https://sunsettavern.com/"
     },
     {
         "eventName": "Barboza",
         "city": "Seattle, Wa",
         "venue": "Barboza",
         "date": "December 15, 2023",
-        "time": "7:00PM"
+        "time": "7:00PM",
+        "ticketLink": "https://www.axs.com/events/502194/dimiter-yordanov-tickets"
     },
     {
         "eventName": "Showboat",
         "city": "Seattle, Wa",
         "venue": "Showboat",
         "date": "October 13, 2023",
-        "time": "7:00PM"
+        "time": "7:00PM",
+        "infoLink": "https://www.showboatseattle.com/"
     }
 ]
