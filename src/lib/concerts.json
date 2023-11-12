@@ -78,5 +78,13 @@
         "date": "October 13, 2023",
         "time": "7:00PM",
         "infoLink": "https://www.showboatseattle.com/"
+    },
+    {
+        "eventName": "College Club Seattle",
+        "city": "Seattle, Wa",
+        "venue": "College Club Seattle",
+        "date": "March 14, 2023",
+        "time": "6:30PM",
+        "infoLink": "https://www.collegeclubseattle.com"
     }
 ]
