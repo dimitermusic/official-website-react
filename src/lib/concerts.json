@@ -56,14 +56,6 @@
         "ticketLink": "https://www.ticketweb.com/event/dimiter-yordanov-miller-tracy-morgan-sunset-tavern-tickets/13318808?pl=sunset"
     },
     {
-        "eventName": "Sunset Tavern",
-        "city": "Seattle, Wa",
-        "venue": "Sunset Tavern",
-        "date": "December 6, 2023",
-        "time": "7:00PM",
-        "infoLink": "https://sunsettavern.com/"
-    },
-    {
         "eventName": "Barboza",
         "city": "Seattle, Wa",
         "venue": "Barboza",
@@ -83,7 +75,7 @@
         "eventName": "College Club Seattle",
         "city": "Seattle, Wa",
         "venue": "College Club Seattle",
-        "date": "March 14, 2024",
+        "date": "March 7, 2024",
         "time": "6:30PM",
         "infoLink": "https://www.collegeclubseattle.com"
     }
