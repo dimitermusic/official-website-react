@@ -1,5 +1,5 @@
 import '../styles/style.css';
-import { FaSpotify, FaApple, FaYoutube, FaInstagram, FaFacebook, FaTwitter, FaImdb } from 'react-icons/fa';
+import { FaSpotify, FaApple, FaYoutube, FaInstagram, FaImdb } from 'react-icons/fa';
 
 export default function Icons() {
 
@@ -16,12 +16,6 @@ export default function Icons() {
             </a>
             <a href='http://instagram.com/dimitermusic'>
                 <FaInstagram className='icon' />
-            </a>
-            <a href='https://www.facebook.com/dimiteryordanovmusic'>
-                <FaFacebook className='icon' />
-            </a>
-            <a href='http://www.twitter.com/dimitermusic'>
-                <FaTwitter className='icon' />
             </a>
             <a href='https://www.imdb.com/name/nm1812085/'>
                 <FaImdb className='icon' />

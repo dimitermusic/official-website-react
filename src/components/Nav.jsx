@@ -18,9 +18,9 @@ export default function Nav() {
   };
 
   // Funtion to handle hiding nav bar when scrolling down and showing when scrolling up
-  let prevScrollPos = window.pageYOffset;
+  let prevScrollPos = window.scrollY;
   const handleNavBarHide = () => {
-    let currentScrollPos = window.pageYOffset;
+    let currentScrollPos = window.scrollY;
     let nav = document.getElementById("nav");
     let mobileNav = document.getElementById("mobile-nav");
     if (prevScrollPos > currentScrollPos) {

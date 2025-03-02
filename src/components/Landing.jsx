@@ -4,7 +4,6 @@ import lieToMe from '../images/lie-to-me.webp';
 import lieToMeText from '../images/lie-to-me-text.png';
 import spotify from '../images/Y-Spotify.png';
 import apple from '../images/Y-AppleMusic.png';
-import itunes from '../images/itunes-logo.png';
 import amazon from '../images/amazon-music-logo.png';
 import pandora from '../images/pandora.png';
 
@@ -33,11 +32,6 @@ export default function Landing() {
             <a href='https://music.apple.com/us/album/lie-to-me-ep/1603910239'>
               <div className='release-btn'>
                 <img className='release-logo' src={apple} alt={imageAltTagsDict.apple}/>
-              </div>
-            </a>
-            <a href='https://music.apple.com/us/album/lie-to-me-ep/1603910239?ign-itscg=30440&ign-itsct=catchall_p2'>
-              <div className='release-btn'>
-                <img className='release-logo' src={itunes} alt={imageAltTagsDict.itunes}/>
               </div>
             </a>
             <a href='https://music.amazon.com/albums/B09Q112YV6'>
