@@ -86,5 +86,13 @@
         "date": "Feb 7, 2024",
         "time": "7:00PM",
         "ticketLink": "https://link.dice.fm/mc0e604e28d3"
+    },
+    {
+        "eventName": "College Club Seattle",
+        "city": "Seattle, Wa",
+        "venue": "College Club Seattle",
+        "date": "June 5, 2025",
+        "time": "6:30PM",
+        "infoLink": "https://www.collegeclubseattle.com"
     }
 ]
