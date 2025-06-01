@@ -6,7 +6,7 @@
     <title>Dimiter Yordanov - Official Website</title>
     <meta
       name="description"
-      content="Official website of Dimiter Yordanov, American musician and film/TV composer."
+      content="The official website for Dimiter Yordanov including new music, video, tour, and mailing list | 'Lie to Me' EP is out now!"
     />
     <meta name="author" content="Dimiter Yordanov" />
 
@@ -14,7 +14,7 @@
     <meta property="og:title" content="Dimiter Yordanov - Official Website" />
     <meta
       property="og:description"
-      content="Official website of Dimiter Yordanov, American musician and film/TV composer."
+      content="The official website for Dimiter Yordanov including new music, video, tour, and mailing list | 'Lie to Me' EP is out now!"
     />
     <meta property="og:url" content="https://www.dimitermusic.com" />
     <meta property="og:type" content="profile" />
@@ -35,7 +35,7 @@
       content="https://m.media-amazon.com/images/M/MV5BMTZhMDI4YTktMWRmYS00YjgwLWJhZmYtYjA1MzNkOWJkZWZiXkEyXkFqcGc@._V1_.jpg"
     />
 
-    <!-- Schema.org Structured Data -->
+    <!-- Master Schema: Person -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -58,6 +58,7 @@
           },
           { "@type": "Occupation", "name": "Singer" },
           { "@type": "Occupation", "name": "Songwriter" },
+          { "@type": "Occupation", "name": "Musician" }
         ],
         "sameAs": [
           "https://open.spotify.com/artist/6QfYumUXMvevU1TR729Jrr",
@@ -74,11 +75,6 @@
         "mainEntityOfPage": {
           "@type": "WebPage",
           "@id": "https://www.dimitermusic.com"
-        },
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Dimiter Music",
-          "url": "https://www.dimitermusic.com"
         },
         "knowsAbout": [
           "Film Scoring",
@@ -126,6 +122,104 @@
             "name": "Lie to Me",
             "url": "https://music.apple.com/us/album/lie-to-me-ep/1603910239"
           }
+        ]
+      }
+    </script>
+
+    <!-- Master Schema: Lie to Me Album -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicAlbum",
+        "name": "Lie to Me",
+        "url": "https://www.dimitermusic.com",
+        "image": "https://i.imgur.com/qtvamrz.jpeg",
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "Dimiter Yordanov",
+          "url": "https://www.dimitermusic.com"
+        },
+        "datePublished": "2021-12-24",
+        "numTracks": "5",
+        "track": [
+          {
+            "@type": "MusicRecording",
+            "name": "Dangerous Man",
+            "isrcCode": "GBKPL2153127"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Cedar Street",
+            "isrcCode": "GBKPL2154157"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Lie to Me",
+            "isrcCode": "GBKPL2158594"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "I Cried in New York",
+            "isrcCode": "GBKPL2161742"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Your Record Is Gone",
+            "isrcCode": "GBKPL2164165"
+          }
+        ],
+        "sameAs": [
+          "https://open.spotify.com/album/4SdOAYDAtTccjYDHa0n99K",
+          "https://music.apple.com/us/album/lie-to-me-ep/1603910239"
+        ]
+      }
+    </script>
+
+    <!-- Master Schema: Wonder Album -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicAlbum",
+        "name": "Wonder",
+        "url": "https://www.dimitermusic.com",
+        "image": "https://i.imgur.com/5AVWM5G.jpeg",
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "Dimiter Yordanov",
+          "url": "https://www.dimitermusic.com"
+        },
+        "datePublished": "2020-05-08",
+        "numTracks": "5",
+        "track": [
+          {
+            "@type": "MusicRecording",
+            "name": "Meteorites",
+            "isrcCode": "GBKPL1941741"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Letting Go",
+            "isrcCode": "GBKPL1952366"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Holiday From My Mind",
+            "isrcCode": "GBKPL2092058"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Wonder",
+            "isrcCode": "GBKPL2094811"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "By You",
+            "isrcCode": "GBKPL2099525"
+          }
+        ],
+        "sameAs": [
+          "https://open.spotify.com/album/4FcgE6Ug6xrxf1QjBHAf3G",
+          "https://music.apple.com/us/album/wonder-ep/1512839988"
         ]
       }
     </script>
