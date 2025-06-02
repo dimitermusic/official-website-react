@@ -24,7 +24,7 @@ export default function Landing() {
           <img id='lie-to-me-text' src={lieToMeText} alt={imageAltTagsDict.lieToMe}/>
           <p id='release-text'>OUT NOW</p>
           <div className='release-btn-group'>
-            <a href='https://open.spotify.com/album/2tqOIJ7JQGANnCAE25bsyx?si=2S13s8dgTL-IUj2e9A7jJQ'>
+            <a href='https://open.spotify.com/album/2tqOIJ7JQGANnCAE25bsyx'>
               <div className='release-btn'>
                 <img className='release-logo' src={spotify} alt={imageAltTagsDict.spotify}/>
               </div>

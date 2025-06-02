@@ -55,6 +55,7 @@ export default function Nav() {
         <div className="anchors">
           <a href="#watch">watch</a>
           <a href="#tour">tour</a>
+          <a href="#listen">listen</a>
           <a href="#subscribe">subscribe</a>
         </div>
         <Icons />
@@ -90,6 +91,16 @@ export default function Nav() {
                   }}
                 >
                   tour
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#listen"
+                  onClick={() => {
+                    handleCloseModal();
+                  }}
+                >
+                  listen
                 </a>
               </li>
               <li>
