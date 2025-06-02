@@ -36,7 +36,7 @@ const albums = [
       "https://open.spotify.com/embed/album/4FcgE6Ug6xrxf1QjBHAf3G?utm_source=generator",
     links: {
       spotify: "https://open.spotify.com/album/4FcgE6Ug6xrxf1QjBHAf3G",
-      apple: "https://music.apple.com/album/wonder/1512294895",
+      apple: "https://music.apple.com/us/album/wonder-ep/1512839988",
       amazon: "https://music.amazon.com/albums/B088QHM758",
     },
   },
