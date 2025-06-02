@@ -1,8 +1,5 @@
-import React from "react";
 import "../styles/style.css";
 import "../styles/advancedDiscography.css";
-import lieToMeCover from "../images/Lie to Me Album Cover - 5056495236641.jpg";
-import wonderCover from "../images/Wonder Album Cover - 5054526066625.jpg";
 
 const albums = [
   {
