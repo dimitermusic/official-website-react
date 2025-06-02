@@ -6,7 +6,6 @@ const albums = [
     id: 1,
     title: "Lie to Me",
     releaseDate: "December 24, 2021",
-    cover: lieToMeCover,
     tracks: [
       "Dangerous Man",
       "Cedar Street",
@@ -26,7 +25,6 @@ const albums = [
     id: 2,
     title: "Wonder",
     releaseDate: "May 8, 2020",
-    cover: wonderCover,
     tracks: [
       "Meteorites",
       "Letting Go",
