@@ -44,7 +44,7 @@ const albums = [
 
 export default function AdvancedDiscography() {
   return (
-    <section id="advanced-discography" className="advanced-discography-section">
+    <section id="listen" className="advanced-discography-section">
       <h1 className="section-title">LISTEN</h1>
       {albums.map((album) => (
         <div className="album-block" key={album.id}>
