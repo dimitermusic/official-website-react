@@ -81,7 +81,7 @@ export default function Concerts() {
   if (error || concerts.length === 0) {
     return (
       <div className="concerts" id="tour">
-        <h1>TOUR</h1>
+        <h1>CONCERTS</h1>
         <p id="coming-soon">COMING SOON!</p>
       </div>
     );
@@ -89,7 +89,7 @@ export default function Concerts() {
   } else {
     return (
       <div className="concerts" id="tour">
-        <h1>TOUR</h1>
+        <h1>CONCERTS</h1>
         <div id="concert-table">
           {concerts
             .map((concert) => (
