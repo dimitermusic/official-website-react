@@ -1,16 +1,20 @@
-import '../styles/style.css';
-import Icons from './Icons';
+import "../styles/Awal.css";
+import "../styles/Footer.css";
+import Icons from "./Icons";
 
 export default function Footer() {
+  // Get and dynamically render current year
+  let thisYear = new Date().toDateString().slice(11);
+  let gitHubLink = "https://www.github.com/dimitermusic";
 
-    // Get and dynamically render current year
-    let thisYear = new Date().toDateString().slice(11);
-    let gitHubLink = 'https://www.github.com/dimitermusic';
-
-    return (
-        <footer>
-            <Icons />
-            <p id='copyright-text'>© {thisYear} Dimiter Yordanov. All Rights Reserved. Powered by <a className='github-link' href={gitHubLink}>Dimiter Yordanov</a>.</p>
-        </footer>
-    )
+  return (
+    <footer id="footer" className="awal-credits-section">
+      <div className="awal-container">
+        <Icons />
+        <p id="copyright-text">
+          © {thisYear} Dimiter Yordanov. All Rights Reserved.{" "}
+        </p>
+      </div>
+    </footer>
+  );
 }

@@ -1,0 +1,82 @@
+/* Concerts.css */
+
+.awal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.awal-list .awal-card {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  gap: 32px;
+  max-width: 780px;
+}
+
+.awal-list .awal-card:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.concert-card {
+  text-decoration: none;
+  width: 100%;
+}
+
+.concert-text {
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+  text-align: left;
+  width: 100%;
+}
+
+.concert-date {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--awal-text-grey);
+}
+
+.concert-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.concert-meta {
+  font-size: 0.95rem;
+  color: var(--awal-text-grey);
+}
+
+.concert-city {
+  font-size: inherit;
+  color: inherit;
+}
+
+.concert-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.concert-actions .btn:hover {
+  background-color: black;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .awal-list .awal-card {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .concert-actions {
+    justify-content: flex-start;
+  }
+}

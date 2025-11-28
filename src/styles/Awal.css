@@ -1,0 +1,292 @@
+/* src/styles/Awal.css */
+
+:root {
+  --awal-bg-dark: rgb(34, 34, 43);
+  --awal-text-white: #ffffff;
+  --awal-text-grey: rgba(255, 255, 255, 0.6);
+  --awal-accent-gold: #fbbf24;
+  --awal-font-main: "Maison Neue", "Helvetica", "Arial", sans-serif;
+  --transition-speed: 0.25s;
+}
+
+.awal-credits-section {
+  background-color: var(--awal-bg-dark);
+  color: var(--awal-text-white);
+  font-family: var(--awal-font-main);
+  padding: 80px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.awal-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.awal-section-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.awal-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.awal-subtitle {
+  font-size: 1.1rem;
+  color: var(--awal-text-grey);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Awal Button System */
+.awal-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background-color: var(--awal-accent-gold);
+  color: var(--awal-bg-dark);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease,
+    color var(--transition-speed) ease, transform var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
+}
+
+.awal-button:hover {
+  background-color: #ffffff;
+  color: var(--awal-bg-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.awal-button--outline {
+  background-color: transparent;
+  color: var(--awal-text-white);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.awal-button--outline:hover {
+  background-color: var(--awal-accent-gold);
+  color: var(--awal-bg-dark);
+}
+
+.awal-button--danger {
+  background-color: #ce3221;
+  color: #ffffff;
+}
+
+.awal-button--danger:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Grid Layout */
+.awal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 40px;
+  width: 100%;
+}
+
+/* Card Styles */
+.awal-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--transition-speed) ease;
+  position: relative;
+}
+
+.awal-card-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  background-color: #000;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.awal-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.awal-card:hover .awal-card-image {
+  opacity: 0.9;
+}
+
+/* Awards Badge */
+.awal-award-badge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.85);
+  color: var(--awal-accent-gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 5px;
+  letter-spacing: 1px;
+  backdrop-filter: blur(4px);
+}
+
+/* Text Content */
+.awal-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.awal-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+.awal-network-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #a1a1aa;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.awal-role {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #e5e5e5;
+  margin: 0 0 10px 0;
+}
+
+.awal-description {
+  font-size: 0.9rem;
+  color: var(--awal-text-grey);
+  line-height: 1.5;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .awal-title {
+    font-size: 2.25rem;
+  }
+
+  .awal-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+  }
+}
+
+/* --------------------------------------------------------- */
+/* NEW: Video Player System (Added for 'Watch' Section)      */
+/* --------------------------------------------------------- */
+
+/* 1. The Container: Enforces 16:9 Aspect Ratio */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-top: 25px;
+  height: 0;
+  background-color: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  margin-bottom: 40px;
+}
+
+/* 2. The Content: Forces iframe/button to fill the container */
+.videoWrapper iframe,
+.lite-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  display: block;
+}
+
+/* 3. The Facade: The "Fake" Player Button Background */
+.lite-video-thumb {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.lite-video:hover .lite-video-thumb {
+  transform: scale(1.05); /* Subtle zoom effect */
+  opacity: 0.8;
+}
+
+/* 4. The Play Button Overlay (NATIVE YOUTUBE STYLE) */
+.lite-video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* YouTube Red Button Dimensions & Color */
+  width: 68px;
+  height: 48px;
+  background-color: #ff0000; /* The Official YouTube Red */
+  border-radius: 12px; /* Soft rounded corners */
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* The Triangle */
+.lite-video-play-icon {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-left: 4px; /* Optical adjustment center */
+}
+
+/* Hover Effect: YouTube Red style */
+.lite-video:hover .lite-video-overlay {
+  background-color: #ff0000;
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.lite-video-label {
+  display: none;
+}

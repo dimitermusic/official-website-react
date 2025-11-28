@@ -53,6 +53,7 @@ export default function Nav() {
           <img src={logo} className="logo" alt="dimiter yordanov" />
         </a>
         <div className="anchors">
+          <a href="#film-tv">film & tv</a>
           <a href="#watch">watch</a>
           <a href="#tour">tour</a>
           <a href="#listen">listen</a>
@@ -73,6 +74,16 @@ export default function Nav() {
               <FaTimes className="times" />
             </div>
             <ul>
+              <li>
+                <a
+                  href="#film-tv"
+                  onClick={() => {
+                    handleCloseModal();
+                  }}
+                >
+                  film & tv
+                </a>
+              </li>
               <li>
                 <a
                   href="#watch"
