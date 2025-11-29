@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="awal-container">
         <Icons />
         <p id="copyright-text">
-          © {thisYear} Dimiter Yordanov. All Rights Reserved.{" "}
+          © {thisYear} Dimiter Yordanov. All Rights Reserved.
         </p>
       </div>
     </footer>

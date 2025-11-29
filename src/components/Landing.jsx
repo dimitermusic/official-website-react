@@ -1,5 +1,5 @@
-import "../styles/style.css";
-import { imageAltTagsDict } from "../utils/helpers";
+import "../styles/GlobalStyles.css";
+import { outNow, landingAltTags } from "../utils/constants";
 import lieToMe from "../images/lie-to-me.webp";
 import lieToMeText from "../images/lie-to-me-text.png";
 import spotify from "../images/Y-Spotify.png";
@@ -22,23 +22,23 @@ export default function Landing() {
             onLoad={handleImageLoaded}
             id="album-cover"
             src={lieToMe}
-            alt={imageAltTagsDict.lieToMe}
+            alt={landingAltTags.lieToMe}
           />
         </div>
         <div className="column" id="col-2">
           <img
             id="lie-to-me-text"
             src={lieToMeText}
-            alt={imageAltTagsDict.lieToMe}
+            alt={landingAltTags.lieToMe}
           />
-          <p id="release-text">OUT NOW</p>
+          <p id="release-text">{outNow}</p>
           <div className="release-btn-group">
             <a href="https://open.spotify.com/album/2tqOIJ7JQGANnCAE25bsyx">
               <div className="release-btn">
                 <img
                   className="release-logo"
                   src={spotify}
-                  alt={imageAltTagsDict.spotify}
+                  alt={landingAltTags.spotify}
                 />
               </div>
             </a>
@@ -47,7 +47,7 @@ export default function Landing() {
                 <img
                   className="release-logo"
                   src={apple}
-                  alt={imageAltTagsDict.apple}
+                  alt={landingAltTags.apple}
                 />
               </div>
             </a>
@@ -56,7 +56,7 @@ export default function Landing() {
                 <img
                   className="release-logo"
                   src={amazon}
-                  alt={imageAltTagsDict.amazon}
+                  alt={landingAltTags.amazon}
                 />
               </div>
             </a>
@@ -65,7 +65,7 @@ export default function Landing() {
                 <img
                   className="release-logo"
                   src={pandora}
-                  alt={imageAltTagsDict.pandora}
+                  alt={landingAltTags.pandora}
                 />
               </div>
             </a>

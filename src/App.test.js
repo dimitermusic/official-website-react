@@ -1,12 +1,10 @@
 import { render } from "@testing-library/react";
+import { sections } from "./utils/constants";
 import App from "./App";
 
 test("renders all main sections by ID", () => {
   render(<App />);
-
-  const ids = ["film-tv", "watch", "tour", "listen", "subscribe"];
-
-  ids.forEach((id) => {
-    expect(document.getElementById(id)).toBeInTheDocument();
+  Object.values(sections).forEach(({ elementId }) => {
+    expect(document.getElementById(elementId)).toBeInTheDocument();
   });
 });

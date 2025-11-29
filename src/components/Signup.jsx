@@ -1,19 +1,18 @@
-import "../styles/Signup.css";
 import { useState } from "react";
+import { sections } from "../utils/constants";
+import "../styles/Signup.css";
 
 export default function Signup() {
-  // Create state variables for the fields in the form and set initial values to an empty string
+  const { elementId, title, subtitle } = sections.signup;
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [robotInput, setRobotInput] = useState("");
 
   const handleInputChange = (e) => {
-    // Get the value and name of the input which triggered the change.
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state or value of either name, email, and message.
     if (inputType === "FULLNAME") {
       setName(inputValue);
     } else if (inputType === "EMAIL") {
@@ -24,13 +23,11 @@ export default function Signup() {
   };
 
   return (
-    <section id="subscribe" className="awal-credits-section">
+    <section id={elementId} className="awal-credits-section">
       <div className="awal-container">
         <header className="awal-section-header">
-          <h2 className="awal-title">Subscribe</h2>
-          <p className="awal-subtitle">
-            Get the latest news, tour dates, and new music.
-          </p>
+          <h2 className="awal-title">{title}</h2>
+          <p className="awal-subtitle">{subtitle}</p>
         </header>
         <div id="mc_embed_signup">
           <form

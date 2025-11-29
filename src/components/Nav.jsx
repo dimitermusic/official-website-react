@@ -1,16 +1,9 @@
-import "../styles/style.css";
+import "../styles/GlobalStyles.css";
 import logo from "../images/Dimiter Logo.png";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Icons from "./Icons";
-
-const navLinks = [
-  { name: "film & tv", href: "#film-tv" },
-  { name: "watch", href: "#watch" },
-  { name: "tour", href: "#tour" },
-  { name: "listen", href: "#listen" },
-  { name: "subscribe", href: "#subscribe" },
-];
+import { sections } from "../utils/constants";
 
 export default function Nav() {
   const [modalDisplay, setModalDisplay] = useState("none");
@@ -25,7 +18,7 @@ export default function Nav() {
     setModalDisplay("none");
   };
 
-  // Funtion to handle hiding nav bar when scrolling down and showing when scrolling up
+  // Function to handle hiding nav bar when scrolling down and showing when scrolling up
   let prevScrollPos = window.scrollY;
   const handleNavBarHide = () => {
     let currentScrollPos = window.scrollY;
@@ -61,9 +54,9 @@ export default function Nav() {
           <img src={logo} className="logo" alt="dimiter yordanov" />
         </a>
         <div className="anchors">
-          {navLinks.map((link) => (
-            <a key={link.href} href={link.href}>
-              {link.name}
+          {Object.values(sections).map(({ elementId, menuLabel }) => (
+            <a key={elementId} href={`#${elementId}`}>
+              {menuLabel}
             </a>
           ))}
         </div>
@@ -82,10 +75,10 @@ export default function Nav() {
               <FaTimes className="times" />
             </div>
             <ul>
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <a href={link.href} onClick={handleCloseModal}>
-                    {link.name}
+              {Object.values(sections).map(({ elementId, menuLabel }) => (
+                <li key={elementId}>
+                  <a href={`#${elementId}`} onClick={handleCloseModal}>
+                    {menuLabel}
                   </a>
                 </li>
               ))}

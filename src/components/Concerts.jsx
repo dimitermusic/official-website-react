@@ -1,7 +1,9 @@
-import "../styles/style.css";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { moreInfo, noConcerts, tickets, sections } from "../utils/constants";
+import "../styles/GlobalStyles.css";
 
 export default function Concerts() {
+  const { elementId, title, subtitle } = sections.concerts;
   const [concerts, setConcerts] = useState([]);
   const [error, setError] = useState(undefined);
 
@@ -39,11 +41,11 @@ export default function Concerts() {
         <p>{concert.city}</p>
         {concert.ticketLink ? (
           <a className="btn" href={concert.ticketLink}>
-            TICKETS
+            {tickets}
           </a>
         ) : (
           <a className="btn" href={concert.infoLink}>
-            MORE INFO
+            {moreInfo}
           </a>
         )}
       </div>
@@ -51,17 +53,15 @@ export default function Concerts() {
   };
 
   return (
-    <section id="tour" className="awal-credits-section">
+    <section id={elementId} className="awal-credits-section">
       <div className="awal-container">
         <header className="awal-section-header">
-          <h2 className="awal-title">Concerts</h2>
-          <p className="awal-subtitle">
-            Upcoming live performances and events.
-          </p>
+          <h2 className="awal-title">{title}</h2>
+          <p className="awal-subtitle">{subtitle}</p>
         </header>
 
         {error || concerts.length === 0 ? (
-          <p id="coming-soon">COMING SOON!</p>
+          <p id="coming-soon">{noConcerts}</p>
         ) : (
           <div id="concert-table">
             {concerts.map((concert) => (

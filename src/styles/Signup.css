@@ -26,15 +26,3 @@
   margin: 24px 0 0 !important;
   justify-content: center;
 }
-
-@media (max-width: 768px) {
-  #mc_embed_signup_scroll {
-    align-items: stretch;
-  }
-
-  .btn.subscribe {
-    width: 100% !important;
-    max-width: 100% !important;
-    align-self: stretch;
-  }
-}

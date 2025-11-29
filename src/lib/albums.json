@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Lie to Me",
+    "releaseDate": "December 24, 2021",
+    "tracks": [
+      "Dangerous Man",
+      "Cedar Street",
+      "Lie to Me",
+      "I Cried in New York",
+      "Your Record Is Gone"
+    ],
+    "spotifyEmbed": "https://open.spotify.com/embed/album/2tqOIJ7JQGANnCAE25bsyx?utm_source=generator",
+    "links": {
+      "spotify": "https://open.spotify.com/album/2tqOIJ7JQGANnCAE25bsyx",
+      "apple": "https://music.apple.com/us/album/lie-to-me-ep/1603910239",
+      "amazon": "https://music.amazon.com/albums/B09Q112YV6"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Wonder",
+    "releaseDate": "May 8, 2020",
+    "tracks": [
+      "Meteorites",
+      "Letting Go",
+      "Holiday From My Mind",
+      "Wonder",
+      "By You"
+    ],
+    "spotifyEmbed": "https://open.spotify.com/embed/album/4FcgE6Ug6xrxf1QjBHAf3G?utm_source=generator",
+    "links": {
+      "spotify": "https://open.spotify.com/album/4FcgE6Ug6xrxf1QjBHAf3G",
+      "apple": "https://music.apple.com/us/album/wonder-ep/1512839988",
+      "amazon": "https://music.amazon.com/albums/B088QHM758"
+    }
+  }
+]

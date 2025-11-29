@@ -1,4 +1,4 @@
-import "../styles/style.css";
+import "../styles/GlobalStyles.css";
 import {
   FaSpotify,
   FaApple,

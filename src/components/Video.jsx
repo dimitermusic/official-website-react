@@ -1,22 +1,21 @@
-import "../styles/style.css";
 import { useState } from "react";
-
-const PLAYLIST_ID = "PLvxyuU_-aPZek3ndePaqvKI6sYmpwKpt_";
-
-// The "Last Train Home" video ID you shared
-const COVER_VIDEO_ID = "5KcIniasjZU";
+import {
+  sections,
+  PLAYLIST_ID,
+  PLAYLIST_COVER_IMAGE_VIDEO_ID,
+} from "../utils/constants";
+import "../styles/GlobalStyles.css";
 
 export default function Video() {
+  const { elementId, title, subtitle } = sections.video;
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section id="watch" className="awal-credits-section">
+    <section id={elementId} className="awal-credits-section">
       <div className="awal-container">
         <header className="awal-section-header">
-          <h2 className="awal-title">Watch</h2>
-          <p className="awal-subtitle">
-            The latest music videos and live performances.
-          </p>
+          <h2 className="awal-title">{title}</h2>
+          <p className="awal-subtitle">{subtitle}</p>
         </header>
 
         {/* The Wrapper handles the 16:9 Aspect Ratio via CSS */}
@@ -41,13 +40,20 @@ export default function Video() {
               <div
                 className="lite-video-thumb"
                 style={{
-                  backgroundImage: `url('https://i.ytimg.com/vi/${COVER_VIDEO_ID}/sddefault.jpg')`,
+                  backgroundImage: `url('https://i.ytimg.com/vi/${PLAYLIST_COVER_IMAGE_VIDEO_ID}/sddefault.jpg')`,
                 }}
               />
 
               {/* The Play Button Overlay (Styled Red in CSS now) */}
               <div className="lite-video-overlay">
-                <span className="lite-video-play-icon">▶</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="100%"
+                  height="100%"
+                  fill="white"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
               </div>
             </button>
           )}
