@@ -1,6 +1,7 @@
 import { sections } from "../utils/constants";
 import { credits } from "../lib/filmCredits";
 import "../styles/GlobalStyles.css";
+import "../styles/FilmCredits.css";
 
 const { elementId, title, subtitle } = sections.filmCredits;
 
@@ -8,16 +9,16 @@ const FilmCredits = () => {
   return (
     <section
       id={elementId}
-      className="awal-credits-section"
+      className="global-section"
       aria-label="Film and TV Credits"
     >
-      <div className="awal-container">
-        <header className="awal-section-header">
-          <h2 className="awal-title">{title}</h2>
-          <p className="awal-subtitle">{subtitle}</p>
+      <div className="global-container">
+        <header className="global-section-header">
+          <h2 className="global-title">{title}</h2>
+          <p className="global-subtitle">{subtitle}</p>
         </header>
 
-        <div className="awal-grid">
+        <div className="film-credit-grid">
           {credits.map(
             ({
               link,
@@ -35,23 +36,25 @@ const FilmCredits = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 key={id}
-                className={`awal-card ${highlight ? "highlight" : ""}`}
+                className={`film-credit-card ${highlight ? "highlight" : ""}`}
               >
-                <div className="awal-card-image-wrapper">
+                <div className="film-credit-card-image-wrapper">
                   <img
                     src={image}
                     alt={`Poster for ${title}`}
-                    className="awal-card-image"
+                    className="film-credit-card-image"
                     loading="lazy"
                   />
-                  {award && <div className="awal-award-badge">{award}</div>}
+                  {award && (
+                    <div className="film-credit-award-badge">{award}</div>
+                  )}
                 </div>
-                <div className="awal-card-content">
-                  <h3 className="awal-card-title">{title}</h3>
-                  <span className="awal-network-tag">{network}</span>
-                  <p className="awal-role">{role}</p>
+                <div className="film-credit-card-content">
+                  <h3 className="film-credit-card-title">{title}</h3>
+                  <span className="film-credit-network-tag">{network}</span>
+                  <p className="film-credit-role">{role}</p>
                   {description && (
-                    <p className="awal-description">{description}</p>
+                    <p className="film-credit-description">{description}</p>
                   )}
                 </div>
               </a>

@@ -1,12 +1,3 @@
-/* Signup.css */
-
-#mc_embed_signup {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0px !important;
-}
-
 #mc_embed_signup_scroll {
   display: flex;
   flex-direction: column;
@@ -17,12 +8,66 @@
   width: 100%;
 }
 
-.btn.subscribe {
-  padding: 20px !important;
-  border-radius: 0 !important;
-  font-weight: 700 !important;
+#mc_embed_signup {
+  margin: 0 auto;
+  clear: center;
+  width: 80%;
+  color: black;
+  text-align: center;
+}
+
+.required {
+  margin: 1rem !important;
+  padding: 15px 20px !important;
+  width: 20rem !important;
+  height: 2.5rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 8px !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  font-size: 1rem !important;
+  text-align: left !important;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 24px 0 0 !important;
-  justify-content: center;
+  letter-spacing: 0.1875rem;
+  outline: 0 !important;
+  -webkit-appearance: none !important;
+}
+
+::placeholder {
+  font-size: small;
+  text-transform: uppercase;
+  letter-spacing: 0.1875rem;
+  color: rgba(255, 255, 255, 0.567);
+}
+
+.response {
+  padding: 1rem;
+  font-size: small;
+}
+
+.response a {
+  color: rgb(91, 91, 91);
+}
+
+.mce_inline_error {
+  background: none !important;
+  font-weight: normal !important;
+  font-size: x-small;
+}
+
+@media only screen and (max-width: 1172px) {
+  #mc_embed_signup {
+    padding: 5rem 1rem !important;
+  }
+
+  .required {
+    max-width: 90% !important;
+  }
+
+  .mc-field-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

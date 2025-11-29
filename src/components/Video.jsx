@@ -5,17 +5,18 @@ import {
   PLAYLIST_COVER_IMAGE_VIDEO_ID,
 } from "../utils/constants";
 import "../styles/GlobalStyles.css";
+import "../styles/Video.css";
 
 export default function Video() {
   const { elementId, title, subtitle } = sections.video;
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section id={elementId} className="awal-credits-section">
-      <div className="awal-container">
-        <header className="awal-section-header">
-          <h2 className="awal-title">{title}</h2>
-          <p className="awal-subtitle">{subtitle}</p>
+    <section id={elementId} className="global-section">
+      <div className="global-container">
+        <header className="global-section-header">
+          <h2 className="global-title">{title}</h2>
+          <p className="global-subtitle">{subtitle}</p>
         </header>
 
         {/* The Wrapper handles the 16:9 Aspect Ratio via CSS */}

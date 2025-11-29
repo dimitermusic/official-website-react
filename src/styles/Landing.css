@@ -1,0 +1,71 @@
+#landing {
+  background-image: url("../images/lie-to-me-blur.webp");
+  background-position: top 0 right 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+#release-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+#album-cover {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.column {
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#col-2 {
+  display: none;
+}
+
+#lie-to-me-text {
+  margin-top: 2rem;
+  width: 147px;
+  height: auto;
+}
+
+#release-text {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.release-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.47rem auto;
+  width: 12rem;
+  height: 3.7rem;
+  background-color: #ce3221;
+  box-shadow: 0 6px 8px -1px rgb(0, 0, 0, 0.13);
+}
+
+.release-btn:hover {
+  background-color: black;
+}
+
+@media only screen and (max-width: 1172px) {
+  #album-cover {
+    width: 85%;
+  }
+}

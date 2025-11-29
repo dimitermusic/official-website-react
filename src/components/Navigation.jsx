@@ -1,9 +1,10 @@
-import "../styles/GlobalStyles.css";
 import logo from "../images/Dimiter Logo.png";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Icons from "./Icons";
 import { sections } from "../utils/constants";
+import "../styles/Navigation.css";
+import "../styles/GlobalStyles.css";
 
 export default function Nav() {
   const [modalDisplay, setModalDisplay] = useState("none");

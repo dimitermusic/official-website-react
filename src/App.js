@@ -1,4 +1,4 @@
-import Nav from "./components/Nav";
+import Navigation from "./components/Navigation";
 import Landing from "./components/Landing";
 import Video from "./components/Video";
 import Concerts from "./components/Concerts";
@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <div className="App" id="home">
-      <Nav />
+      <Navigation />
       <Landing />
       <FilmCredits />
       <Video />

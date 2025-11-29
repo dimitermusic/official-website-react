@@ -1,4 +1,3 @@
-import "../styles/GlobalStyles.css";
 import { outNow, landingAltTags } from "../utils/constants";
 import lieToMe from "../images/lie-to-me.webp";
 import lieToMeText from "../images/lie-to-me-text.png";
@@ -6,6 +5,8 @@ import spotify from "../images/Y-Spotify.png";
 import apple from "../images/Y-AppleMusic.png";
 import amazon from "../images/amazon-music-logo.png";
 import pandora from "../images/pandora.png";
+import "../styles/GlobalStyles.css";
+import "../styles/Landing.css";
 
 export default function Landing() {
   // Function that handles dynamically rendering release buttons if album cover has loaded.

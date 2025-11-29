@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { sections } from "../utils/constants";
+import "../styles/GlobalStyles.css";
 import "../styles/Signup.css";
 
 export default function Signup() {
@@ -23,11 +24,11 @@ export default function Signup() {
   };
 
   return (
-    <section id={elementId} className="awal-credits-section">
-      <div className="awal-container">
-        <header className="awal-section-header">
-          <h2 className="awal-title">{title}</h2>
-          <p className="awal-subtitle">{subtitle}</p>
+    <section id={elementId} className="global-section">
+      <div className="global-container">
+        <header className="global-section-header">
+          <h2 className="global-title">{title}</h2>
+          <p className="global-subtitle">{subtitle}</p>
         </header>
         <div id="mc_embed_signup">
           <form

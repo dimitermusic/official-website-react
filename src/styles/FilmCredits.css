@@ -1,0 +1,101 @@
+.film-credit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 40px;
+  width: 100%;
+}
+
+.film-credit-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--transition-speed) ease;
+  position: relative;
+}
+
+.film-credit-card-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  background-color: #000;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.film-credit-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.film-credit-card:hover .film-credit-card-image {
+  opacity: 0.9;
+}
+
+.film-credit-award-badge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fbbf24;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 5px;
+  letter-spacing: 1px;
+  backdrop-filter: blur(4px);
+}
+
+.film-credit-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.film-credit-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+.film-credit-network-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #a1a1aa;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.film-credit-role {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #e5e5e5;
+  margin: 0 0 10px 0;
+}
+
+.film-credit-description {
+  font-size: 0.9rem;
+  color: var(--global-text-grey);
+  line-height: 1.5;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .film-credit-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+  }
+}
