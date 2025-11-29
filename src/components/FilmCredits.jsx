@@ -1,6 +1,3 @@
-import React from "react";
-import "../styles/Awal.css";
-
 import kindnessDiariesPoster from "../images/film_and_tv/the_kindness_diaries.jpg";
 import arquettePoster from "../images/film_and_tv/yckda.jpg";
 import badCountryPoster from "../images/film_and_tv/bad_country.jpg";

@@ -1,4 +1,3 @@
-import "../styles/Awal.css";
 import "../styles/style.css";
 import React, { useState, useEffect } from "react";
 

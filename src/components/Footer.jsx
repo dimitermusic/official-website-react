@@ -1,4 +1,3 @@
-import "../styles/Awal.css";
 import "../styles/Footer.css";
 import Icons from "./Icons";
 

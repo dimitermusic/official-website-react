@@ -1,6 +1,5 @@
-import "../styles/Awal.css";
 import "../styles/Signup.css";
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function Signup() {
   // Create state variables for the fields in the form and set initial values to an empty string

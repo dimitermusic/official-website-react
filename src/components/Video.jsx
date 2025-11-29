@@ -1,5 +1,4 @@
-import "../styles/Awal.css";
-import "../styles/style.css"; // Uncomment if you rely on global styles
+import "../styles/style.css";
 import { useState } from "react";
 
 const PLAYLIST_ID = "PLvxyuU_-aPZek3ndePaqvKI6sYmpwKpt_";

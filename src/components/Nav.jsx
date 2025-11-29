@@ -4,6 +4,14 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Icons from "./Icons";
 
+const navLinks = [
+  { name: "film & tv", href: "#film-tv" },
+  { name: "watch", href: "#watch" },
+  { name: "tour", href: "#tour" },
+  { name: "listen", href: "#listen" },
+  { name: "subscribe", href: "#subscribe" },
+];
+
 export default function Nav() {
   const [modalDisplay, setModalDisplay] = useState("none");
 
@@ -53,11 +61,11 @@ export default function Nav() {
           <img src={logo} className="logo" alt="dimiter yordanov" />
         </a>
         <div className="anchors">
-          <a href="#film-tv">film & tv</a>
-          <a href="#watch">watch</a>
-          <a href="#tour">tour</a>
-          <a href="#listen">listen</a>
-          <a href="#subscribe">subscribe</a>
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href}>
+              {link.name}
+            </a>
+          ))}
         </div>
         <Icons />
       </nav>
@@ -74,56 +82,13 @@ export default function Nav() {
               <FaTimes className="times" />
             </div>
             <ul>
-              <li>
-                <a
-                  href="#film-tv"
-                  onClick={() => {
-                    handleCloseModal();
-                  }}
-                >
-                  film & tv
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#watch"
-                  onClick={() => {
-                    handleCloseModal();
-                  }}
-                >
-                  watch
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#tour"
-                  onClick={() => {
-                    handleCloseModal();
-                  }}
-                >
-                  tour
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#listen"
-                  onClick={() => {
-                    handleCloseModal();
-                  }}
-                >
-                  listen
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#subscribe"
-                  onClick={() => {
-                    handleCloseModal();
-                  }}
-                >
-                  subscribe
-                </a>
-              </li>
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <a href={link.href} onClick={handleCloseModal}>
+                    {link.name}
+                  </a>
+                </li>
+              ))}
             </ul>
             <Icons className="modal-icons" />
           </div>
