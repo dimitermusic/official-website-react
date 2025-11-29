@@ -27,7 +27,8 @@ const credits = [
       "Lead composer for the critically acclaimed wrestling documentary starring David Arquette, Patricia Arquette, and Courteney Cox.",
     image: arquettePoster,
     link: "https://www.imdb.com/title/tt11454066/",
-    award: "SXSW Official Selection",
+    award:
+      "Adobe Editing Award (SXSW), Best Documentary (Charlotte Film Festival)",
   },
   {
     id: 3,
@@ -41,13 +42,13 @@ const credits = [
   },
   {
     id: 4,
-    title: "Kindness Within",
+    title: "The Kindness Within",
     role: "Complete Original Score",
     network: "Prime Video",
     description:
-      "Winner of Best Picture & Best Documentary (Beverly Hills Film Fest). Composed the entire original score.",
+      "Composed the entire original epic orchestral score for the Best Picture winner (Beverly Hills Film Fest) starring Leon Logothetis.",
     image: kindnessWithinPoster,
-    award: "WINNER: Best Picture & Best Doc (Beverly Hills Film Fest)",
+    award: "Best Picture & Best Documentary (Beverly Hills Film Festival)",
     link: "https://www.imdb.com/title/tt14926940/",
   },
 ];

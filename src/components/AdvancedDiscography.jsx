@@ -1,5 +1,6 @@
 import "../styles/Awal.css";
 import "../styles/AdvancedDiscography.css";
+import "../styles/Concerts.css";
 
 const albums = [
   {
