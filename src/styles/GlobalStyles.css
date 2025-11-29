@@ -8,6 +8,7 @@
 
 :root {
   --global-text-grey: rgba(255, 255, 255, 0.6);
+  --global-border-color: rgba(255, 255, 255, 0.08);
   --transition-speed: 0.25s;
 }
 
