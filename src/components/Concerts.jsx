@@ -65,7 +65,7 @@ export default function Concerts() {
         ) : (
           <div id="concert-table">
             {concerts.map((concert) => (
-              <ConcertRow concert={concert} key={concert.id} />
+              <ConcertRow concert={concert} key={concert.date} />
             ))}
           </div>
         )}
