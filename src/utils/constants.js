@@ -47,4 +47,10 @@ export const sections = {
     title: "Subscribe",
     subtitle: "Get the latest news, tour dates, and new music.",
   },
+  // press: {
+  //   elementId: "press",
+  //   menuLabel: "press",
+  //   title: "Press & Awards",
+  //   subtitle: "What others have written about the work.",
+  // },
 };
