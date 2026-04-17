@@ -4,18 +4,16 @@ import { pressFeatures, awards } from "../lib/pressItems";
 import "../styles/GlobalStyles.css";
 import "../styles/Press.css";
 
-const { elementId, title } = sections.press;
-
 const Press = () => {
   return (
     <section
-      id={elementId}
+      id={sections.press.elementId}
       className="global-section"
       aria-label="Press and Awards"
     >
       <div className="global-container">
         <header className="global-section-header">
-          <h2 className="global-title">{title}</h2>
+          <h2 className="global-title">{sections.press.title}</h2>
         </header>
 
         {/* Pull Quote */}
