@@ -14,7 +14,7 @@ export default function App() {
       <Navigation />
       <Landing />
       <FilmCredits />
-      <Press />
+      {/* <Press /> */}
       <Video />
       <Concerts />
       <Discography />
