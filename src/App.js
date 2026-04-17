@@ -6,6 +6,7 @@ import Discography from "./components/Discography";
 import FilmCredits from "./components/FilmCredits";
 import Signup from "./components/Signup";
 import Footer from "./components/Footer";
+import Press from "./components/Press";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Navigation />
       <Landing />
       <FilmCredits />
+      <Press />
       <Video />
       <Concerts />
       <Discography />

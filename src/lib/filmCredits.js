@@ -10,7 +10,7 @@ export const credits = [
     role: "Complete Original Score",
     network: "Netflix / Discovery+",
     description:
-      "Writer, singer, and performer for the entire score and soundtrack across both seasons, including the critically acclaimed single 'Rain.'",
+      "Writer, singer, and performer for the full score and soundtrack across both seasons, featuring the celebrated single 'Rain'.",
     image: kindnessDiariesPoster,
     link: "https://www.imdb.com/title/tt6786518/",
     highlight: true,
@@ -21,7 +21,7 @@ export const credits = [
     role: "Lead Composer",
     network: "Hulu / Super Ltd / Neon",
     description:
-      "Lead composer for the critically acclaimed wrestling documentary starring David Arquette, Patricia Arquette, and Courteney Cox.",
+      "Original score for the documentary starring David Arquette, Patricia Arquette, and Courteney Cox.",
     image: arquettePoster,
     link: "https://www.imdb.com/title/tt11454066/",
     award:
@@ -33,7 +33,7 @@ export const credits = [
     role: "Original Songs",
     network: "Sony Pictures / Prime Video",
     description:
-      "Wrote and performed original blues tracks for the action thriller starring Willem Dafoe, Matt Dillon, and Amy Smart.",
+      "Original blues tracks written and performed for the thriller starring Willem Dafoe, Matt Dillon, and Amy Smart.",
     image: badCountryPoster,
     link: "https://www.imdb.com/title/tt2350892/",
   },
@@ -43,7 +43,7 @@ export const credits = [
     role: "Complete Original Score",
     network: "Prime Video",
     description:
-      "Composed the entire original epic orchestral score for the Best Picture winner (Beverly Hills Film Fest) starring Leon Logothetis.",
+      "Full orchestral score for the feature film starring Leon Logothetis.",
     image: kindnessWithinPoster,
     award: "Best Picture & Best Documentary (Beverly Hills Film Festival)",
     link: "https://www.imdb.com/title/tt14926940/",
